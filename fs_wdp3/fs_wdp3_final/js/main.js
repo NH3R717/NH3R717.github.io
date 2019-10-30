@@ -70,7 +70,7 @@ document.body.style.backgroundImage = "url('https://raw.githubusercontent.com/NH
 	
 		function updateUISuccess(responseText) {
 			const data = JSON.parse(xhr.responseText)		
-			locationSection = document.querySelector('#main');
+			locationSection = document.querySelector('#blog');
 
 			// console.log(xhr.responseText);
 			
