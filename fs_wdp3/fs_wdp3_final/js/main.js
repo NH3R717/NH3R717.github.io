@@ -5,7 +5,7 @@ document.body.style.backgroundImage = "url('https://raw.githubusercontent.com/NH
 (function () {
 	function weatherData() {
 		// function variables and function call
-		const url = "http://api.openweathermap.org/data/2.5/weather?q=Tokyo,Japan&appid=752eccc4d76263ad69799217910d067f";
+		const url = "https://api.openweathermap.org/data/2.5/weather?q=Tokyo,Japan&appid=752eccc4d76263ad69799217910d067f";
 		console.log(url);
 		let xhr;
 
