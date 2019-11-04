@@ -66,27 +66,34 @@
 
     <section>
 
-        <h1>Contact Us</h1>
+        <h2>Contact Us</h2>
 
-        <p>
-            <label"name"></label>  
-            <input type="text" placeholder="Name">   
-        </p>
-        <p>
-            <label"email"></label>  
-            <input type="text" placeholder="Email">   
-        </p>
-        <select>
-            <option value="question">Questions</option>
-            <option value="feedback">Feedback</option>
-            <option value="membership">Membership</option>
-        </select>
-        <p>
-        <label"message"></label>
-        <input type="text" placeholder="message">    
-        </p>
-        <a href="#">Send</a>
+        <form>
+                
+                    <div>
+                        <label for="name"></label>
+                        <input type="text" name="name" id="name" class="required" placeholder="Name:">
+                    </div>
+                    <div>
+                        <label for="email"></label>
+                        <input type="email" name="email" id="email" class="required" placeholder="Email:">
+                    </div>
+                    <div>
+                        <label for="phone"></label>
+                        <input type="text" name="phone" id="phone" class="required" placeholder="Phone:">
+                    </div>
+                
 
+                <div>
+                    <label for="message"></label>
+                    <textarea name="message" id="message"  placeholder="Message:"></textarea>
+                </div>
+
+                <div>
+                    <button type="button">Submit</button>
+                </div>
+            </form>
+    
         <!-- contact info -->
 
         <div>
