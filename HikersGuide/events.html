@@ -7,7 +7,11 @@
 
     <meta charset="UTF-8">
 
-    <!-- title – displays in a browser tab and the default save name for bookmarks -->
+<!-- Script element placed within the head tag forcing JS data to load before html (this may prevent the page from loading any information in the even that JS data does not load) -->
+
+<script src="js/content.js"></script>
+
+<!-- title – displays in a browser tab and the default save name for bookmarks -->
 
     <title>Hikers Guide – Events</title>
 
@@ -15,7 +19,7 @@
 
 <!-- body – what renders in the webpage -->
 
-<body>
+<body id="eventPAge">
 
     <!-- header – reusable header site content -->
 
@@ -53,11 +57,15 @@
 
     <!-- events -->
 
-    <section>
+    <section id="eventsPage">
 
-        <H1>Events</H1>
+        <H2>Events</H2>
+
         <article>
-            <h2>Location</h2>
+            <h2>title</h2>
+            <!-- <h3>sponsored by</h3> -->
+            <h4>date</h4>
+            <h5>location = state</h5>
             <p>Accusantium tempore corporis doloremque voluptate debitis, asperiores dolores repudiandae voluptatibus
                 quos id, pariatur tenetur vitae ea rem temporibus officia architecto, quibusdam atque quae reiciendis
                 consectetur hic delectus! </p>
@@ -65,7 +73,10 @@
         <a href="#">Map Link</a>
 
         <article>
-            <h2>Location</h2>
+            <h2>title</h2>
+            <!-- <h3>sponsored by</h3> -->
+            <h4>date</h4>
+            <h5>location = state</h5>
             <p>Accusantium tempore corporis doloremque voluptate debitis, asperiores dolores repudiandae voluptatibus
                 quos id, pariatur tenetur vitae ea rem temporibus officia architecto, quibusdam atque quae reiciendis
                 consectetur hic delectus! </p>
@@ -73,12 +84,16 @@
         <a href="#">Map Link</a>
 
         <article>
-            <h2>Location</h2>
+            <h2>title</h2>
+            <!-- <h3>sponsored by</h3> -->
+            <h4>date</h4>
+            <h5>location + state</h5>
             <p>Accusantium tempore corporis doloremque voluptate debitis, asperiores dolores repudiandae voluptatibus
                 quos id, pariatur tenetur vitae ea rem temporibus officia architecto, quibusdam atque quae reiciendis
                 consectetur hic delectus! </p>
         </article>
         <a href="#">Map Link</a>
+        
         <br>
         <a href="#">Load More</a>
 
@@ -86,7 +101,7 @@
 
     <!-- footer – reusable site footer content -->
 
-    <footer>
+    <footer id="footer">
 
         <!-- navigation – legal/info -->
 

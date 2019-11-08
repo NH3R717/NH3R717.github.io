@@ -18,6 +18,10 @@
 
     <meta charset="UTF-8">
 
+    <!-- Script element placed within the head tag forcing JS data to load before html (this may prevent the page from loading any information in the even that JS data does not load) -->
+
+    <script src="js/content.js"></script>
+
     <!-- title – displays in a browser tab and the default save name for bookmarks -->
 
     <title>Hikers Guide – Home</title>
@@ -26,7 +30,7 @@
 
 <!-- body – what renders in the webpage -->
 
-<body>
+<body id="index">
 
     <!-- header – reusable header site content -->
 
@@ -64,12 +68,12 @@
 
     <!-- Recent Events – with image slider/carousel -->
 
-    <section>
+    <section id="locations">
 
-        <h2>Recent Events</h2>
-        <article>
-            <h2>City, ST</h2>
-            <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+        <h2></h2>
+        <article id="imageSlider">
+            <h3>City, ST</h3>
+            <h4>Lorem ipsum dolor sit amet consectetur.</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, voluptatem.
             </p>
         </article>
@@ -102,11 +106,12 @@
 
     <!-- Recent Blog Post -->
 
-    <section>
+    <section id="posts">
 
-        <h2>Recent Blog Post</h2>
+        <h2>Recent Post</h2>
+
         <article>
-            <img src="images/hikers1001.jpg" alt="Hikers Guide User">
+            <img src="images/hikers1001.jpg" width="550" height="400" alt="Hikers Guide User">
             <h3>Amet consectetur adipisicing elit.</h3>
             <h4>City, ST</h4>
             <p>Dolor sit amet consectetur, adipisicing elit. Maiores aliquam quisquam voluptatibus perferendis,
@@ -116,7 +121,7 @@
         </article>
 
         <article>
-            <img src="images/hikers1001.jpg" alt="Hikers Guide User">
+            <img src="images/hikers1001.jpg" width="550" height="400" alt="Hikers Guide User">
             <h3>Amet consectetur adipisicing elit.</h3>
             <h4>City, ST</h4>
             <p>Dolor sit amet consectetur, adipisicing elit. Maiores aliquam quisquam voluptatibus perferendis,
@@ -126,7 +131,7 @@
         </article>
 
         <article>
-            <img src="images/hikers1001.jpg" alt="Hikers Guide User">
+            <img src="images/hikers1001.jpg" width="550" height="400" alt="Hikers Guide User">
             <h3>Amet consectetur adipisicing elit.</h3>
             <h4>City, ST</h4>
             <p>Dolor sit amet consectetur, adipisicing elit. Maiores aliquam quisquam voluptatibus perferendis,
@@ -136,7 +141,7 @@
         </article>
 
         <article>
-            <img src="images/hikers1001.jpg" alt="Hikers Guide User">
+            <img src="images/hikers1001.jpg" width="550" height="400" alt="Hikers Guide User">
             <h3>Amet consectetur adipisicing elit.</h3>
             <h4>City, ST</h4>
             <p>Dolor sit amet consectetur, adipisicing elit. Maiores aliquam quisquam voluptatibus perferendis,
@@ -146,7 +151,7 @@
         </article>
 
         <article>
-            <img src="images/hikers1001.jpg" alt="Hikers Guide User">
+            <img src="images/hikers1001.jpg" width="550" height="400" alt="Hikers Guide User">
             <h3>Amet consectetur adipisicing elit.</h3>
             <h4>City, ST</h4>
             <p>Dolor sit amet consectetur, adipisicing elit. Maiores aliquam quisquam voluptatibus perferendis,
@@ -156,7 +161,7 @@
         </article>
 
         <article>
-            <img src="images/hikers1001.jpg" alt="Hikers Guide User">
+            <img src="images/hikers1001.jpg" width="550" height="400" alt="Hikers Guide User">
             <h3>Amet consectetur adipisicing elit.</h3>
             <h4>City, ST</h4>
             <p>Dolor sit amet consectetur, adipisicing elit. Maiores aliquam quisquam voluptatibus perferendis,
@@ -169,7 +174,7 @@
 
     <!-- Testimonial -->
 
-    <section>
+    <section id="actionCall">
 
         <h2>Join the Adventure</h2>
         <blockquote>
@@ -184,7 +189,7 @@
 
     <!-- Sign Up -->
 
-    <section>
+    <section id="signUp">
 
         <h2>The biggest adventure of your life is right around the corner.</h2>
         <button type="button">Sign Up Now!</button>
@@ -193,7 +198,7 @@
 
     <!-- Upcoming Events -->
 
-    <Section>
+    <Section id="events">
 
         <h3>Upcoming Events</h3>
         <ul>
@@ -229,37 +234,38 @@
 
     <!-- New Hikers -->
 
-    <section>
+    <section id="hikers">
 
         <h3>New Hikers</h3>
         <ul>
             <li>
-                <img src="images/user.png" alt="Hikers Guide User">
+                <img src="images/user.png" width="300" height="300" alt="Hikers Guide User">
                 <h4>Jam, Jimmy</h4>
                 <p>Somewhere, ST</p>
             </li>
             <li>
-                <img src="images/user.png" alt="Hikers Guide User">
+                <img src="images/user.png" width="300" height="300" alt="Hikers Guide User">
                 <h4>Jam, Jimmy</h4>
                 <p>Somewhere, ST</p>
             </li>
             <li>
-                <img src="images/user.png" alt="Hikers Guide User">
+                <img src="images/user.png" width="300" height="300" alt="Hikers Guide User">
                 <h4>Jam, Jimmy</h4>
                 <p>Somewhere, ST</p>
             </li>
             <li>
-                <img src="images/user.png" alt="Hikers Guide User">
+                <img src="images/user.png" width="300" height="300" alt="Hikers Guide User">
                 <h4>Jam, Jimmy</h4>
                 <p>Somewhere, ST</p>
             </li>
+            
         </ul>
 
     </section>
 
     <!-- About -->
 
-    <section>
+    <section id="about">
 
         <h3>About</h3>
         <h4>Deserunt temporibus optio neque eaque.</h4>
@@ -270,11 +276,12 @@
             minus vitae, atque dolore quasi nesciunt magnam rem? Nam natus ipsam repellendus culpa magnam sequi expedita
             omnis eum possimus ratione!</p>
 
+
     </section>
 
     <!-- footer – reusable site footer content -->
 
-    <footer>
+    <footer id="footer">
 
         <nav>
             <ul>
