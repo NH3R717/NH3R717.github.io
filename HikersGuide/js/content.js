@@ -121,8 +121,8 @@ xhr.onload = function () {
     const blogPage = document.querySelectorAll("#blogPage article");
     if (blogPage) {
         for (let i = 0; i < blogPage.length; i++) {
-            blogPage[i].querySelector("img").src = data.posts[i].imageURL;
-            blogPage[i].querySelector("img").alt = data.posts[i].title;
+            blogPage[i].querySelector(".blogImage").src = data.posts[i].imageURL;
+            blogPage[i].querySelector(".blogImage").alt = data.posts[i].title;
             blogPage[i].querySelector("h3").innerHTML = data.posts[i].author;
             blogPage[i].querySelector("h4").innerHTML = data.posts[i].postDate;
             blogPage[i].querySelector("h2").innerHTML = data.posts[i].title;
