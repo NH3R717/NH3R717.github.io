@@ -432,7 +432,6 @@ footer img:hover {
 }
 
 #contactForm form button {
-    /* font-family: "program", sans-serif; */
     font-weight: bold;
     text-transform: uppercase;
     padding: .5rem 3rem;
