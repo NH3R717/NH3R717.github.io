@@ -12,19 +12,19 @@
 
 <head>
 
-<!-- Unicode Transformation Format – 8 represent any character in the Unicode standard. UTF-8 is backwards compatible with ASCII. (no closing tag) -->
+    <!-- Unicode Transformation Format – 8 represent any character in the Unicode standard. UTF-8 is backwards compatible with ASCII. (no closing tag) -->
 
     <meta charset="UTF-8">
 
-<!-- Script element placed within the head tag forcing JS data to load before html (this may prevent the page from loading any information in the even that JS data does not load) -->
+    <!-- Script element placed within the head tag forcing JS data to load before html (this may prevent the page from loading any information in the even that JS data does not load) -->
 
     <script src="js/content.js"></script>
 
-<!-- Title – displays in a browser tab and the default save name for bookmarks -->
+    <!-- Title – displays in a browser tab and the default save name for bookmarks -->
 
     <title>Hikers Guide – Home</title>
 
-<!-- CSS references – external -->
+    <!-- CSS references – external -->
 
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/reset.css">
@@ -38,11 +38,13 @@
 
     <!-- header – reusable header site content -->
 
-    <header>
+    <header id="headerLocations">
 
         <!-- heading 1 (logo) inclusion of logo as and html element -->
 
-        <h1><a href="index.html"><img src="images/hikersGuide.png" alt="Hikers Guide Logo"></a> </h1>
+        <h1>
+            <a href="index.html"><img src="images/hikersGuide.png" alt="Hikers Guide Logo"></a>
+        </h1>
 
         <!-- navigation – primary page navigation element -->
 
@@ -74,7 +76,6 @@
 
     <section id="locations">
 
-        <h2></h2>
         <article id="imageSlider">
             <h3>City, ST</h3>
             <h4>Lorem ipsum dolor sit amet consectetur.</h4>
@@ -114,65 +115,63 @@
 
         <h2>Recent Post</h2>
 
-        <article>
-            <img src="images/hikers1001.jpg" width="550" height="400" alt="Hikers Guide User">
-            <h3>Amet consectetur adipisicing elit.</h3>
-            <h4>City, ST</h4>
-            <p>Dolor sit amet consectetur, adipisicing elit. Maiores aliquam quisquam voluptatibus perferendis,
-                molestias
-                enim.</p>
-            <a href="#">Read More</a>
-        </article>
+        <div class="grid">
 
-        <article>
-            <img src="images/hikers1001.jpg" width="550" height="400" alt="Hikers Guide User">
-            <h3>Amet consectetur adipisicing elit.</h3>
-            <h4>City, ST</h4>
-            <p>Dolor sit amet consectetur, adipisicing elit. Maiores aliquam quisquam voluptatibus perferendis,
-                molestias
-                enim.</p>
-            <a href="#">Read More</a>
-        </article>
+            <article>
+                <img src="images/hikers1001.jpg" width="550" height="400" alt="Hikers Guide User">
+                <h3>Amet consectetur adipisicing elit.</h3>
+                <h4>City, ST</h4>
+                <p>Dolor sit amet consectetur, adipisicing elit. Maiores aliquam quisquam voluptatibus perferendis, molestias enim.
+                </p>
+                <a href="#">Read More</a>
+            </article>
 
-        <article>
-            <img src="images/hikers1001.jpg" width="550" height="400" alt="Hikers Guide User">
-            <h3>Amet consectetur adipisicing elit.</h3>
-            <h4>City, ST</h4>
-            <p>Dolor sit amet consectetur, adipisicing elit. Maiores aliquam quisquam voluptatibus perferendis,
-                molestias
-                enim.</p>
-            <a href="#">Read More</a>
-        </article>
+            <article>
+                <img src="images/hikers1001.jpg" width="550" height="400" alt="Hikers Guide User">
+                <h3>Amet consectetur adipisicing elit.</h3>
+                <h4>City, ST</h4>
+                <p>Dolor sit amet consectetur, adipisicing elit. Maiores aliquam quisquam voluptatibus perferendis, molestias enim.
+                </p>
+                <a href="#">Read More</a>
+            </article>
 
-        <article>
-            <img src="images/hikers1001.jpg" width="550" height="400" alt="Hikers Guide User">
-            <h3>Amet consectetur adipisicing elit.</h3>
-            <h4>City, ST</h4>
-            <p>Dolor sit amet consectetur, adipisicing elit. Maiores aliquam quisquam voluptatibus perferendis,
-                molestias
-                enim.</p>
-            <a href="#">Read More</a>
-        </article>
+            <article>
+                <img src="images/hikers1001.jpg" width="550" height="400" alt="Hikers Guide User">
+                <h3>Amet consectetur adipisicing elit.</h3>
+                <h4>City, ST</h4>
+                <p>Dolor sit amet consectetur, adipisicing elit. Maiores aliquam quisquam voluptatibus perferendis, molestias enim.
+                </p>
+                <a href="#">Read More</a>
+            </article>
 
-        <article>
-            <img src="images/hikers1001.jpg" width="550" height="400" alt="Hikers Guide User">
-            <h3>Amet consectetur adipisicing elit.</h3>
-            <h4>City, ST</h4>
-            <p>Dolor sit amet consectetur, adipisicing elit. Maiores aliquam quisquam voluptatibus perferendis,
-                molestias
-                enim.</p>
-            <a href="#">Read More</a>
-        </article>
+            <article>
+                <img src="images/hikers1001.jpg" width="550" height="400" alt="Hikers Guide User">
+                <h3>Amet consectetur adipisicing elit.</h3>
+                <h4>City, ST</h4>
+                <p>Dolor sit amet consectetur, adipisicing elit. Maiores aliquam quisquam voluptatibus perferendis, molestias enim.
+                </p>
+                <a href="#">Read More</a>
+            </article>
 
-        <article>
-            <img src="images/hikers1001.jpg" width="550" height="400" alt="Hikers Guide User">
-            <h3>Amet consectetur adipisicing elit.</h3>
-            <h4>City, ST</h4>
-            <p>Dolor sit amet consectetur, adipisicing elit. Maiores aliquam quisquam voluptatibus perferendis,
-                molestias
-                enim.</p>
-            <a href="#">Read More</a>
-        </article>
+            <article>
+                <img src="images/hikers1001.jpg" width="550" height="400" alt="Hikers Guide User">
+                <h3>Amet consectetur adipisicing elit.</h3>
+                <h4>City, ST</h4>
+                <p>Dolor sit amet consectetur, adipisicing elit. Maiores aliquam quisquam voluptatibus perferendis, molestias enim.
+                </p>
+                <a href="#">Read More</a>
+            </article>
+
+            <article>
+                <img src="images/hikers1001.jpg" width="550" height="400" alt="Hikers Guide User">
+                <h3>Amet consectetur adipisicing elit.</h3>
+                <h4>City, ST</h4>
+                <p>Dolor sit amet consectetur, adipisicing elit. Maiores aliquam quisquam voluptatibus perferendis, molestias enim.
+                </p>
+                <a href="#">Read More</a>
+            </article>
+
+        </div>
 
         <button type="button">View More</button>
 
@@ -184,11 +183,10 @@
 
         <h2>Join the Adventure</h2>
         <blockquote>
-            Sit amet consectetur adipisicing elit. Quis illum, laboriosam voluptate sit error similique tempora eos!
-            Inventore, doloribus magni!
+            Sit amet consectetur adipisicing elit. Quis illum, laboriosam voluptate sit error similique tempora eos! Inventore, doloribus magni!
         </blockquote>
 
-            <p><em>- Author | City, ST</em></p>
+        <p><em>- Author | City, ST</em></p>
 
         <h2>The biggest adventure of your life is right around the corner.</h2>
         <button type="button">Sign Up Now!</button>
@@ -197,130 +195,139 @@
 
     <!-- Upcoming Events -->
 
-    <Section id="events">
+    <div class="eventsHikersAbout">
 
-        <h3>Upcoming Events</h3>
-        <ul>
-            <li>
-                <time>2019-11</time>
+        <Section id="events">
 
-                <h4>Non quod dolorem.</h4>
+            <h3>Upcoming Events</h3>
+            <ul>
+                <li>
+                    <time>2019-11</time>
 
-                <p>Laudantium placeat mollitia assumenda facilis aspernatur labore exercitationem quis iusto.</p>
+                    <h4>Non quod dolorem.</h4>
 
-            </li>
+                    <p>Laudantium placeat mollitia assumenda facilis aspernatur labore exercitationem quis iusto.</p>
 
-            <li>
-                <time>2019-11</time>
+                </li>
 
-                <h4>Non quod dolorem.</h4>
+                <li>
+                    <time>2019-11</time>
 
-                <p>Laudantium placeat mollitia assumenda facilis aspernatur labore exercitationem quis iusto.</p>
+                    <h4>Non quod dolorem.</h4>
 
-            </li>
+                    <p>Laudantium placeat mollitia assumenda facilis aspernatur labore exercitationem quis iusto.</p>
 
-            <li>
-                <time>2019-11</time>
+                </li>
 
-                <h4>Non quod dolorem.</h4>
+                <li>
+                    <time>2019-11</time>
 
-                <p>Laudantium placeat mollitia assumenda facilis aspernatur labore exercitationem quis iusto.</p>
+                    <h4>Non quod dolorem.</h4>
 
-            </li>
-        </ul>
+                    <p>Laudantium placeat mollitia assumenda facilis aspernatur labore exercitationem quis iusto.</p>
 
-    </Section>
+                </li>
+            </ul>
 
-    <!-- New Hikers -->
+        </Section>
 
-    <section id="hikers">
+        <!-- New Hikers -->
 
-        <h3>New Hikers</h3>
-        <ul>
-            <li>
-                <img src="images/user.png" width="300" height="300" alt="Hikers Guide User">
-                <h4>Jam, Jimmy</h4>
-                <p>Somewhere, ST</p>
-            </li>
-            <li>
-                <img src="images/user.png" width="300" height="300" alt="Hikers Guide User">
-                <h4>Jam, Jimmy</h4>
-                <p>Somewhere, ST</p>
-            </li>
-            <li>
-                <img src="images/user.png" width="300" height="300" alt="Hikers Guide User">
-                <h4>Jam, Jimmy</h4>
-                <p>Somewhere, ST</p>
-            </li>
-            <li>
-                <img src="images/user.png" width="300" height="300" alt="Hikers Guide User">
-                <h4>Jam, Jimmy</h4>
-                <p>Somewhere, ST</p>
-            </li>
-            
-        </ul>
+        <section id="hikers">
 
-    </section>
+            <h3>New Hikers</h3>
+            <ul>
+                <li>
+                    <img src="images/user.png" width="300" height="300" alt="Hikers Guide User">
+                    <h4>Jam, Jimmy</h4>
+                    <p>Somewhere, ST</p>
+                </li>
+                <li>
+                    <img src="images/user.png" width="300" height="300" alt="Hikers Guide User">
+                    <h4>Jam, Jimmy</h4>
+                    <p>Somewhere, ST</p>
+                </li>
+                <li>
+                    <img src="images/user.png" width="300" height="300" alt="Hikers Guide User">
+                    <h4>Jam, Jimmy</h4>
+                    <p>Somewhere, ST</p>
+                </li>
+                <li>
+                    <img src="images/user.png" width="300" height="300" alt="Hikers Guide User">
+                    <h4>Jam, Jimmy</h4>
+                    <p>Somewhere, ST</p>
+                </li>
 
-    <!-- About -->
+            </ul>
 
-    <section id="about">
+        </section>
 
-        <h3>About</h3>
-        <h4>Deserunt temporibus optio neque eaque.</h4>
-        <p>Voluptatem nam, magni explicabo incidunt temporibus porro. Quos quod sint officiis minima dignissimos! Vero,
-            tenetur unde blanditiis repellendus dolorum cupiditate ullam inventore ipsa, labore laborum saepe asperiores
-            non ipsam esse, nesciunt repudiandae.
-            <br>Illo, inventore repellendus, voluptate esse accusantium laudantium debitis alias aut possimus veniam
-            minus vitae, atque dolore quasi nesciunt magnam rem? Nam natus ipsam repellendus culpa magnam sequi expedita
-            omnis eum possimus ratione!</p>
+        <!-- About -->
 
 
-    </section>
+        <section id="about">
 
+            <h3>About</h3>
+            <h4>Deserunt temporibus optio neque eaque.</h4>
+            <p>Voluptatem nam, magni explicabo incidunt temporibus porro. Quos quod sint officiis minima dignissimos! Vero, tenetur unde blanditiis repellendus dolorum cupiditate ullam inventore ipsa, labore laborum saepe asperiores non ipsam esse, nesciunt
+                repudiandae.
+                <br>Illo, inventore repellendus, voluptate esse accusantium laudantium debitis alias aut possimus veniam minus vitae, atque dolore quasi nesciunt magnam rem? Nam natus ipsam repellendus culpa magnam sequi expedita omnis eum possimus ratione!</p>
+
+
+
+        </section>
+
+    </div>
     <!-- footer – reusable site footer content -->
 
-    <footer id="footer">
 
-        <nav>
+    <footer>
+
+        <!-- links – legal/info -->
+
+        <ul>
+            <li>
+                <p>&copy; Hikers Guide, INC</p>
+            </li>
+            <li>
+                <a href="#">Privacy</a>
+            </li>
+            <li>
+                <a href="#">Terms</a>
+            </li>
+            <li>
+                <a href="#">Newsletter</a>
+            </li>
+        </ul>
+
+        <!-- links – social media -->
+
+        <section id="socialMedia">
             <ul>
                 <li>
-                    <p>&copy; Hikers Guide, INC</p>
+                    <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebook"></a>
                 </li>
                 <li>
-                    <a href="#">Privacy</a>
+                    <a href="https://twitter.com"><img src="images/twitter.png" alt="twitter"></a>
                 </li>
                 <li>
-                    <a href="#">Terms</a>
+                    <a href="https://youtube.com"><img src="images/youtube.png" alt="twitter"></a>
                 </li>
                 <li>
-                    <a href="#">Newsletter</a>
+                    <a href="https://google.com"><img src="images/google.png" alt="twitter"></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com"><img src="images/instagram.png" alt="instagram"></a>
                 </li>
             </ul>
-        </nav>
+        </section>
 
-        <!-- navigation – social media -->
-
-        <nav>
-            <ul>
-                <li>
-                    <a href="https://www.facebook.com/">Facebook</a>
-                </li>
-                <li>
-                    <a href="https://www.twitter.com/">Twitter</a>
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/">Youtube</a>
-                </li>
-                <li>
-                    <a href="https://www.google.com/">Google Plus</a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/">Instagram</a>
-                </li>
-            </ul>
-        </nav>
     </footer>
+
+    <!-- loads HTML 1st ensuring javascript injection successful -->
+
+    <script src="js/content.js"></script>
+
 </body>
 
 </html>

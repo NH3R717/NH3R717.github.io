@@ -1,20 +1,20 @@
 /*
  * Use AJAX to load the JSON and manipulate the HTML
  * https://joshbloom.github.io/dws1/data/hikersguide.json
-*/
+ */
 
 const xhr = new XMLHttpRequest();
-xhr.onload = function () {
+xhr.onload = function() {
     const data = JSON.parse(xhr.responseText);
     const navBttns = document.querySelectorAll("#index #locations button");
     let imgCount = "";
 
-
     /*
-    ** (index.html) id=locations
-    */
+     ** (index.html) id=locations
+     */
 
-    const featured = document.querySelector("#index section #imageSlider");
+    const featured = document.querySelector("#imageSlider");
+
     function locationSlide(index) {
         featured.querySelector("h3").innerHTML =
             data.locations[index].city + ", " + data.locations[index].state;
@@ -23,7 +23,7 @@ xhr.onload = function () {
     }
     if (featured) {
         locationSlide(0);
-        navBttns[0].addEventListener("click", function () {
+        navBttns[0].addEventListener("click", function() {
             imgCount -= 1;
             if (imgCount < 0) {
                 imgCount = data.locations.length - 1;
@@ -32,7 +32,7 @@ xhr.onload = function () {
                 locationSlide(imgCount % data.locations.length);
             }
         });
-        navBttns[6].addEventListener("click", function () {
+        navBttns[6].addEventListener("click", function() {
             imgCount += 1;
             if (imgCount >= data.locations.length) {
                 imgCount = 0;
@@ -43,7 +43,7 @@ xhr.onload = function () {
         });
 
         for (let i = 0; i < 5; i++) {
-            navBttns[i + 1].addEventListener("click", function () {
+            navBttns[i + 1].addEventListener("click", function() {
                 locationSlide(i);
                 imgCount = i;
             });
@@ -51,10 +51,10 @@ xhr.onload = function () {
     }
 
     /*
-    ** (index.html) id=posts
-    */
+     ** (index.html) id=posts
+     */
 
-    const posts = document.querySelectorAll("#index #posts article");
+    const posts = document.querySelectorAll("#posts article");
     if (posts) {
         for (let i = 0; i < posts.length; i++) {
             posts[i].querySelector("img").src = data.posts[i].imageURL;
@@ -66,8 +66,8 @@ xhr.onload = function () {
     }
 
     /*
-    ** (index.html) id=events
-    */
+     ** (index.html) id=events
+     */
 
     const events = document.querySelectorAll("#index #events li");
     if (events) {
@@ -79,10 +79,10 @@ xhr.onload = function () {
     }
 
     /*
-    ** (index.html) id=hikers
-    */
+     ** (index.html) id=hikers
+     */
 
-    const hikers = document.querySelectorAll("#index #hikers li");
+    const hikers = document.querySelectorAll("#hikers li");
     if (hikers) {
         for (let i = 0; i < hikers.length; i++) {
             var hikerFullName =
@@ -96,18 +96,18 @@ xhr.onload = function () {
     }
 
     /*
-    ** (index.html) id=about
-    */
+     ** (index.html) id=about
+     */
 
-    const about = document.querySelector("#index #about");
+    const about = document.querySelector("#about");
     if (about) {
         about.querySelector("h4").innerHTML = data.about.title;
         about.querySelector("p").innerHTML = data.about.text;
     }
 
     /*
-    ** (all pages) id=footer
-    */
+     ** (all pages) id=footer
+     */
 
     const copy = document.querySelector("#footer");
     if (copy) {
@@ -115,8 +115,8 @@ xhr.onload = function () {
     }
 
     /*
-    ** (blog.html) id=blogPage
-    */
+     ** (blog.html) id=blogPage
+     */
 
     const blogPage = document.querySelectorAll("#blogPage article");
     if (blogPage) {
@@ -129,24 +129,25 @@ xhr.onload = function () {
             blogPage[i].querySelector("p").innerHTML = data.posts[i].text
         }
     }
+
     /*
-    ** (events.html) id=eventsPage
-    */
+     ** (events.html) id=eventsPage
+     */
 
     const eventsPage = document.querySelectorAll("#eventsPage article");
     if (eventsPage) {
         for (let i = 0; i < eventsPage.length; i++) {
-            eventsPage[i].querySelector("h2").innerHTML = data.events[i].title;
+            eventsPage[i].querySelector("h3").innerHTML = data.events[i].title;
             // eventsPage[i].querySelector("h3").innerHTML = data.events[i].sponsor;
             eventsPage[i].querySelector("h4").innerHTML = data.events[i].date;
-            eventsPage[i].querySelector("h5").innerHTML = data.events[i].location + ", " + data.events[i].state;
+            eventsPage[i].querySelector(".locationState").innerHTML = data.events[i].location + ", " + data.events[i].state;
             eventsPage[i].querySelector("p").innerHTML = data.events[i].text;
         }
     }
 
     /*
-    ** (contact.html) id=contactPage
-    */
+     ** (contact.html) id=contactPage
+     */
 
     console.log(about);
     console.log(copy);
@@ -154,7 +155,6 @@ xhr.onload = function () {
     console.log(eventsPage);
 
 };
-
 
 xhr.open('GET', 'https://joshbloom.github.io/dws1/data/hikersguide.json', true);
 xhr.send(null);
