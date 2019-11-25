@@ -16,10 +16,6 @@
 
     <meta charset="UTF-8">
 
-    <!-- Script element placed within the head tag forcing JS data to load before html (this may prevent the page from loading any information in the even that JS data does not load) -->
-
-    <script src="js/content.js"></script>
-
     <!-- Title – displays in a browser tab and the default save name for bookmarks -->
 
     <title>Hikers Guide – Events</title>
@@ -172,6 +168,11 @@
         </section>
 
     </footer>
+
+    <!-- loads HTML 1st ensuring javascript injection successful -->
+
+    <script src="js/content.js"></script>
+
 </body>
 
 </html>

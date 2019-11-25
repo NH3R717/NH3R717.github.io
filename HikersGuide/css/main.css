@@ -434,7 +434,7 @@ footer img:hover {
 #contactForm form button {
     font-weight: bold;
     text-transform: uppercase;
-    padding: .5rem 3rem;
+    padding: .2rem 3.5rem;
     background: #1abc9c;
     display: block;
     margin: 0 0 4px 0;
@@ -449,4 +449,19 @@ footer img:hover {
     padding: 0px 2rem;
     font-size: 1.2rem;
     color: #eeeeee;
+}
+
+#currentWeather {
+    margin: 0 1rem 1rem 1rem;
+    padding: 1rem 2rem;
+}
+
+#weatherButton {
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: .2rem 3.5rem;
+    background: #1abc9c;
+    display: block;
+    margin: 2rem;
+    color: #111111;
 }
