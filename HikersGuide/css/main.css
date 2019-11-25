@@ -61,19 +61,6 @@ body {
 }
 
 
-/* section border (aid in development) */
-
-
-/* header,
-body>section,
-body>nav,
-body>section>article,
-body>section>ul>li,
-footer {
-    border: 1px solid red;
-} */
-
-
 /* heading tag styles */
 
 h2 {
@@ -107,10 +94,6 @@ p {
 
 #main h1 {
     display: inline-block;
-}
-
-nav {
-    float: right;
 }
 
 nav li {
@@ -189,7 +172,7 @@ footer img:hover {
 
 #locations,
 #headerLocations {
-    height: 53rem;
+    /* height: 53rem; */
     padding: 20rem 0 15rem 2rem;
     transform: rotate(0deg);
     /* background property */
