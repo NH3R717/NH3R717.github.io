@@ -52,7 +52,7 @@ for (let i = 0; i < requiredFields.length; i++) {
 
     function weatherData() {
         // function variables and function call
-        const url = "http://api.openweathermap.org/data/2.5/weather?id=1819730&appid=752eccc4d76263ad69799217910d067f";
+        const url = "https://api.openweathermap.org/data/2.5/weather?id=1819730&appid=752eccc4d76263ad69799217910d067f";
         let xhr;
 
         makeRequest();
