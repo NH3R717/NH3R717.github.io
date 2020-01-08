@@ -10,9 +10,19 @@
     "build": "gulp"
   },
   "devDependencies": {
-    "browser-sync": "^2.26.5",
+    "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
     "gulp-sass": "^4.0.2",
     "node-sass": "^4.12.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dws2/kanban-NH3R717.git"
+  },
+  "author": "tommy",
+  "license": "ISC",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": ""
 }

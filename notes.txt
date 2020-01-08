@@ -1,0 +1,18 @@
+git checkout -B `new branch name` – creates a new branch
+git branch -a – list all branches (local and remote)
+git merge `branch merging from` – merge named branch to current branch
+git push origin – 'adds' file changes to online remote git repository (origin is an optional name for a remote repo)
+git remote -v – checks remote 'origin' (url)
+git remote add origin `url/to/your/fork`
+git fetch – like add
+git pull – like push
+feature branch workflow
+
+npm init – sets up npm within a project
+npm -D gulp – installs (developer) gulp dependency
+
+*dev branch – "working branch, pre release and updates (post prerelease)"
+
+*master branch – "published app functioning branch"
+
+*readme-update – "merge instruction purpose"
