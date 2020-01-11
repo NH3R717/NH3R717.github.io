@@ -28,7 +28,7 @@
         <button type="button">Settings</button>
     </header>
 
-    <!-- <main> main 'unique' of the webpage (excludes reusable page headers and footers) -->
+    <!-- <main> main 'unique' of the webpage content (excludes reusable page headers and footers) -->
     <main>
         <!-- <article> task sections "make sense on there own" -->
         <article>
@@ -46,35 +46,46 @@
             </section>
 
         </article>
-
-        <section>
-            <div class="taskHead">
+        <!-- <article> task sections "make sense on there own" -->
+        <article>
+            <!-- <header> task section header -->
+            <header>
                 <h2>In Progress</h2>
-                <button type="button" class="bttn">Add Task</button>
-            </div>
-            <div id="in_progress">
+                <button type="button">Add Task</button>
+            </header>
+            <!-- <section> individual task cards multiple instances will be added via javascript -->
+            <section id="to_do">
                 <h3>Task Title</h3>
                 <p>Task Description</p>
-                <p class="date">Task Due Date</p>
-            </div>
-        </section>
+                <!-- <time> time tag adds date/time machine readability, this feature may or may not be implemented -->
+                <time>date</time>
+            </section>
 
-        <section>
+        </article>
 
-            <head class="taskHead">
+        <!-- <article> task sections "make sense on there own" -->
+        <article>
+            <!-- <header> task section header -->
+            <header>
                 <h2>Complete</h2>
-                <button type="button" class="bttn">Add Task</button>
-            </head>
-            <div id="complete">
+                <button type="button">Add Task</button>
+            </header>
+            <!-- <section> individual task cards multiple instances will be added via javascript -->
+            <section id="to_do">
                 <h3>Task Title</h3>
                 <p>Task Description</p>
-                <p class="date">Task Due Date</p>
-            </div>
-        </section>
+                <!-- <time> time tag adds date/time machine readability, this feature may or may not be implemented -->
+                <time>date</time>
+            </section>
+
+        </article>
 
     </main>
 
-    <footer></footer>
+    <!-- footer content to be added -->
+    <footer>
+
+    </footer>
 
     <script>
         scr = ".css/main.css"
