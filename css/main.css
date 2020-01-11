@@ -7,6 +7,9 @@
    */
 
 
+/* don't forget to run CSS through validator */
+
+
 /* sets up page default style */
 
 html,
@@ -111,23 +114,11 @@ p {
     font-size: 1.2em;
 }
 
-.taskHead {
-    display: inline-flex;
-}
-
 section {
     height: auto;
     padding: 10px;
     justify-content: center;
     width: 220px;
-}
-
-.flex_main {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    padding: 10px;
-    height: auto;
 }
 
 @media all and (max-width: 100%) {
@@ -138,7 +129,6 @@ section {
         padding: 10px;
         height: auto;
     }
-    section {}
 }
 
 @media all and (max-width: 1200px) {}
@@ -173,26 +163,3 @@ section {
         /* width: fit-content; */
     }
 }
-
-
-/* .flex_main{
-    display: flex;
-    height: 200px;
-
-    section {
-    width: 100px;  
-    height: 100px; 
-    margin: auto;  
-  }
-
-@media (min-width: 400px){
-    h1{
-        font-size: 2em;
-    }
-    h2{
-        font-size: 1.6em;
-    }
-    p{
-        font-size: 1.4em;
-    }
-} */
