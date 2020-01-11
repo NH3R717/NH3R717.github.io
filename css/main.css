@@ -6,96 +6,174 @@
    
    */
 
+
 /* sets up page default style */
 
-html,body,div,span,applet,object,
-iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,
-address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,
-strike,sub,sup,tt,var,center,dl,dt,dd,ol,ul,li,fieldset,form,
-label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,
-aside,canvas,details,embed,figure,figcaption,footer,header,
-hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,
-video { border: 0; font-size: 100%; font: inherit; vertical-align: baseline; margin: 0; padding: 0; }
-html { 
-    font-size: 62.5%; 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+sub,
+sup,
+tt,
+var,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
     font-family: Tahoma, Geneva, Verdana, sans-serif;
 }
 
-h1{
-    font-size: 1.6em;  
-  }
-
-h2{
-    font-size: 1.4em;  
+h1 {
+    font-size: 1.6em;
 }
 
-p{
-    font-size: 1.2em;    
+h2 {
+    font-size: 1.4em;
 }
 
-section{
+p {
+    font-size: 1.2em;
+}
+
+.taskHead {
+    display: inline-flex;
+}
+
+section {
     height: auto;
     padding: 10px;
     justify-content: center;
     width: 220px;
 }
- 
-.flex_main
- {
+
+.flex_main {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     padding: 10px;
     height: auto;
-  }
-  
+}
+
 @media all and (max-width: 100%) {
-    .flex_main
-    {
-       display: flex;
-       flex-flow: row wrap;
-       justify-content: space-around;
-       padding: 10px;
-       height: auto;
-     }
-     section {
-
-     }
-}
-
-@media all and (max-width: 1200px) {
-
-}
-
-@media all and (max-width: 900px) {
-
-}
-
-@media all and (max-width: 500px) {
-
-}
-
-  /* Medium screens */
-  @media all and (max-width: 800px) {
-    .flex_main{
-      justify-content: space-around;
-      padding: 10px;
-      height: auto;
+    .flex_main {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        padding: 10px;
+        height: auto;
     }
-  }
-  
-  /* Small screens */
-  @media all and (max-width: 400px) {
-    .flex_main, section {
-      /* On small screens, we are no longer using row direction but column */
-    flex-direction: column;
-    align-items: center;
-    width: 280px;
-    padding: 15px;
-    justify-content: center;
-      /* width: fit-content; */
+    section {}
+}
+
+@media all and (max-width: 1200px) {}
+
+@media all and (max-width: 900px) {}
+
+@media all and (max-width: 500px) {}
+
+
+/* Medium screens */
+
+@media all and (max-width: 800px) {
+    .flex_main {
+        justify-content: space-around;
+        padding: 10px;
+        height: auto;
     }
-  }
+}
+
+
+/* Small screens */
+
+@media all and (max-width: 400px) {
+    .flex_main,
+    section {
+        /* On small screens, we are no longer using row direction but column */
+        flex-direction: column;
+        align-items: center;
+        width: 280px;
+        padding: 15px;
+        justify-content: center;
+        /* width: fit-content; */
+    }
+}
+
 
 /* .flex_main{
     display: flex;
