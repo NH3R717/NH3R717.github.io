@@ -43,4 +43,16 @@ mixin – code block for same css properties with different values
 
 nesting – can 'nest' selectors within each other (nest directly with out parent/child selectors)
 
-extending - 
+extending - overwrites stated property value with new value
+
+
+[x] mobile first
+[] variables
+[] mixin
+[] placeholder
+[] nesting
+[] extend
+[x] sub-folders (@import)
+[x] flexbox
+[x] media queries (@media)
+[x] viewpoint meta tag
