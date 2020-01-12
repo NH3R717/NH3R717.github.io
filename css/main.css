@@ -127,10 +127,14 @@ background pattern
         font-size: 1em;
     }
     
-    body+header {
+    body header {
         display: flex;
-        flex-flow: row wrap;
-        justify-content: space-around;
+        justify-content: space-between;
+        width: auto;
+        padding: 1.4em 1.4em;
+        border: .0em;
+        margin: ;
+        border-color: ;
     }
     
     body footer {
@@ -200,13 +204,27 @@ background pattern
             height: auto;
         }
         article {
-            width: 300px;
-            padding: 10px;
+            width: auto;
+            padding: .8em 1.5em;
+            border: .2em solid rgba(212, 108, 10, 0.5);
+            margin: .2em;
+            border-radius: 2em;
+            /* style */
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.36);
         }
         article header {
+            /* flex  */
             display: flex;
             justify-content: space-between;
-            width: 280px;
-            color: blue;
+            /* form */
+            width: auto;
+            padding: .2em;
+            border: ;
+            margin: ;
+            border-color: ;
+            /* border-radius: 10 25%; */
+            /* style / color */
+            /* border-color: ; */
+            /* /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); */
         }
     }
