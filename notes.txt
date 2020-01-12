@@ -16,3 +16,31 @@ npm -D gulp – installs (developer) gulp dependency
 *master branch – "published app functioning branch"
 
 *readme-update – "merge instruction purpose"
+
+Week 1 Notes
+
+/* ISSUES & Q's:
+
+• Over all this class is pretty easy to follow, more so than other classes but,...
+
+• Not really understanding what happens when a pull request is made (the actual action on gethub)
+
+• No background context info on what is happening with sass
+a. not clear on how/where to write the CSS 'code' (in the main.css or main.scss file)
+b. what's going on with the sass code, (a brief explanation of this from being written in the main.scss file to how that code is compiled and where it ends up in the web page)
+
+• for default styles rest what is preferred `*` or the tag list? 
+
+*/
+
+320px and 1200px
+
+don't forget to run CSS through validator
+
+sass variables – 'top of code'
+
+mixin – code block for same css properties with different values
+
+nesting – can 'nest' selectors within each other (nest directly with out parent/child selectors)
+
+extending - 

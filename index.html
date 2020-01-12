@@ -7,6 +7,9 @@
    • Web Design Standards 2 (WDSII)
    
    */
+
+   Notes: 
+   • "spell check attribute"
    
  -->
 
@@ -15,10 +18,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <meta name="viewport" content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>WDSII Task Manager</title>
     <link rel="stylesheet" href="./css/main.css">
+
 </head>
 
 <body>
@@ -32,50 +37,56 @@
     <main>
         <!-- <article> task sections "make sense on there own" -->
         <article>
-            <!-- <header> task section header -->
+            <!-- <header> task section header – "introductory content " for the article to the section -->
             <header>
                 <h2>To Do</h2>
-                <button type="button">Add Task</button>
+                <button class="article button" type="button">Add Task</button>
             </header>
             <!-- <section> individual task cards multiple – instances will be added via javascript -->
             <section>
                 <h3>Task Title</h3>
-                <p>Task Description</p>
-                <!-- <time> time tag adds date/time machine readability, this feature may or may not be implemented -->
-                <time>date</time>
+                <div class="wrapper_descriptionTime">
+                    <p>Task Description</p>
+                    <!-- <time> time tag adds date/time machine readability, this feature may or may not be implemented -->
+                    <time>2010-10-10 10:10</time>
+                </div>
             </section>
 
         </article>
         <!-- <article> task sections "make sense on there own" -->
         <article>
-            <!-- <header> task section header -->
+            <!-- <header> task section header – "introductory content " for the article to the section -->
             <header>
                 <h2>In Progress</h2>
-                <button type="button">Add Task</button>
+                <button class="article_button" type="button">Add Task</button>
             </header>
             <!-- <section> individual task cards – multiple instances will be added via javascript -->
             <section>
                 <h3>Task Title</h3>
-                <p>Task Description</p>
-                <!-- <time> time tag adds date/time machine readability, this feature may or may not be implemented -->
-                <time>date</time>
+                <div class="wrapper_descriptionTime">
+                    <p>Task Description</p>
+                    <!-- <time> time tag adds date/time machine readability, this feature may or may not be implemented -->
+                    <time>2010-10-10 10:10</time>
+                </div>
             </section>
 
         </article>
 
         <!-- <article> task sections "make sense on there own" -->
         <article>
-            <!-- <header> task section header -->
+            <!-- <header> task section header – "introductory content " for the article to the section -->
             <header>
                 <h2>Complete</h2>
-                <button type="button">Add Task</button>
+                <button class="article button" type="button">Add Task</button>
             </header>
             <!-- <section> individual task cards – multiple instances will be added via javascript -->
             <section>
                 <h3>Task Title</h3>
-                <p>Task Description</p>
-                <!-- <time> time tag adds date/time machine readability, this feature may or may not be implemented -->
-                <time>date</time>
+                <div class="wrapper_descriptionTime">
+                    <p>Task Description</p>
+                    <!-- <time> time tag adds date/time machine readability, this feature may or may not be implemented -->
+                    <time>2010-10-10 10:10</time>
+                </div>
             </section>
 
         </article>
@@ -86,13 +97,6 @@
     <footer>
         <H2><strong>Footer content goes here.</strong> </H2>
     </footer>
-
-    <script>
-        scr = ".css/main.css"
-    </script>
-    <script>
-        scr = "./scss/main.scss"
-    </script>
 
 </body>
 

@@ -1,0 +1,17 @@
+@mixin listItemFormat($value1, $value2) {
+    border: $value1;
+    padding: $value2;
+}
+
+@include listItemFormat(0, 0) article section h3 {
+    border: 0;
+}
+
+=article {
+    section {
+        border: 0;
+    }
+    h3 {
+        border: 0;
+    }
+}
