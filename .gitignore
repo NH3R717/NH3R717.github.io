@@ -16,4 +16,4 @@ node_modules/
 css/second.css
 
 #  sass feature examples
-scss/sub/!examples.scss
+/scss/sub/!examples.scss

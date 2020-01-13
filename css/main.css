@@ -128,15 +128,11 @@ body footer {
       border-color: rgba(212, 108, 10, 0.5);
       margin: 0 .6em 3em .6em;
       border-radius: 2em;
-      /* style */
       box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.36); }
       main article header {
         display: flex;
         justify-content: space-between;
-        padding: .5em .2em 1.5em .2em;
-        border: 0;
-        margin: 0;
-        border-color: 0; }
+        padding: .5em .2em 1.5em .2em; }
       main article section {
         width: auto;
         padding: .8em 1.5em;
@@ -178,15 +174,11 @@ body footer {
       border-color: rgba(212, 108, 10, 0.5);
       margin: 0 .6em 3em .6em;
       border-radius: 2em;
-      /* style */
       box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.36); }
       main article header {
         display: flex;
         justify-content: space-between;
-        padding: .5em .2em 1.5em .2em;
-        border: 0;
-        margin: 0;
-        border-color: 0; }
+        padding: .5em .2em 1.5em .2em; }
       main article section {
         width: auto;
         padding: .8em 1.5em;
@@ -228,15 +220,11 @@ body footer {
       border-color: rgba(212, 108, 10, 0.5);
       margin: 0 .6em 3em .6em;
       border-radius: 2em;
-      /* style */
       box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.36); }
       main article header {
         display: flex;
         justify-content: space-between;
-        padding: .5em .2em 1.5em .2em;
-        border: 0;
-        margin: 0;
-        border-color: 0; }
+        padding: .5em .2em 1.5em .2em; }
       main article section {
         width: auto;
         padding: .8em 1.5em;
@@ -277,15 +265,11 @@ body footer {
       border-color: rgba(212, 108, 10, 0.5);
       margin: 0 .6em 3em .6em;
       border-radius: 2em;
-      /* style */
       box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.36); }
       main article header {
         display: flex;
         justify-content: space-between;
-        padding: .5em .2em 1.5em .2em;
-        border: 0;
-        margin: 0;
-        border-color: 0; }
+        padding: .5em .2em 1.5em .2em; }
       main article section {
         width: auto;
         padding: .8em 1.5em;

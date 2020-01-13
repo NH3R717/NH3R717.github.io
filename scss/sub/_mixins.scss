@@ -3,10 +3,8 @@
 // flex for main content
 @mixin mainFlex () {
     display: flex;
-    // justify-content: center;
     padding: 15px;
     height: auto;
-    // flex-direction: unset;
 }
 
 // flex for sizes above mobile
@@ -18,15 +16,12 @@
 // task sections (3)
 @mixin taskDivision () {
     flex: auto;
-    // width: auto;
     padding: .8em 1.5em;
     border: .2em solid;
     border-color: $borderColor;
     margin: 0 .6em 3em .6em;
     border-radius: 2em;
-    /* style */
     box-shadow: 2px 2px 2px $boxShadow;
-    // box-shadow: $boxShadow;
 }
 
 // task section header
@@ -34,9 +29,6 @@
     display: flex;
     justify-content: space-between;
     padding: .5em .2em 1.5em .2em;
-    border: 0;
-    margin: 0;
-    border-color: 0;
 }
 
 // individual tasks
@@ -47,9 +39,9 @@
     margin: 0 .2em 1em .2em;
     border-radius: 1em;
     box-shadow: 1px 1px 1px $boxShadow;
-    // box-shadow: $boxShadow;
 }
 
+// header footer
 @mixin mainHeaderFooter {
     header {
         display: flex;
