@@ -1,27 +1,94 @@
-// %somecode {
-//     border: 0;
-//     background-color: white;
+// mixin
+// @mixin listItemFormat($value1, $value2) {
+//     border: $value1;
+//     padding: $value2;
 // }
-// .aClass {
-//     @extend %somecode;
-//     border-radius: 0;
+// mixin use
+// @include listItemFormat(0, 0);
+// %mainFlex {
+//     display: flex;
+//     justify-content: center;
+//     padding: 15px;
+//     height: auto;
 // }
-%mainFlex {
+@mixin mainFlex () {
     display: flex;
-    justify-content: center;
+    // justify-content: center;
     padding: 15px;
     height: auto;
+    // flex-direction: unset;
 }
 
-// flex-direction: column/row;
-%taskCard {
+@mixin taskDivision () {
     width: auto;
     padding: .8em 1.5em;
-    border: .2em solid $borderColor;
-    // border-color: $borderColor;
+    border: .2em solid;
+    border-color: $borderColor;
     margin: 0 .2em 3em .2em;
     border-radius: 2em;
     /* style */
     box-shadow: 2px 2px 2px $boxShadow;
     // box-shadow: $boxShadow;
+}
+
+@mixin taskHeader {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    padding: .5em .2em 1.5em .2em;
+    border: 0;
+    margin: 0;
+    border-color: 0;
+}
+
+@mixin taskCard {
+    width: auto;
+    padding: .8em 1.5em;
+    border: .2em solid rgba(212, 108, 10, 0.5);
+    margin: 0 .2em 1em .2em;
+    border-radius: 1em;
+    box-shadow: 1px 1px 1px $boxShadow;
+    // box-shadow: $boxShadow;
+}
+
+@mixin taskMain {
+    article {
+        @include taskDivision ();
+        header {
+            @include taskHeader
+        }
+        section {
+            @include taskCard;
+            h3 {
+                font-style: bold;
+            }
+            div {
+                display: flex;
+                justify-content: space-between;
+                width: auto;
+                p {
+                    text-justify: auto;
+                }
+                time {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
+
+@mixin mainHeaderFooter {
+    header {
+        display: flex;
+        justify-content: space-between;
+        width: auto;
+        padding: 3em 2em 2em 2em;
+        margin: 0;
+    }
+    footer {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: left;
+        padding: 15px;
+    }
 }

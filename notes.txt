@@ -47,9 +47,9 @@ extending - overwrites stated property value with new value
 
 
 [x] mobile first
-[] variables
+[x] variables
 [] mixin
-[] nesting
+[x] nesting
 [] extend/placeholder
 [x] sub-folders (@import)
 [x] flexbox

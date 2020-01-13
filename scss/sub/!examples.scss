@@ -1,38 +1,34 @@
-// variable
-$font-stack: Tahoma,
-Geneva,
-Verdana,
-sans-serif;
-$primary-color: white;
-// mixin
-@mixin listItemFormat($value1, $value2) {
-    border: $value1;
-    padding: $value2;
-}
-
-// mixin use
-@include listItemFormat(0, 0);
-article section h3 {
-    border: 0;
-}
-
-// nesting
-article {
-    section {
-        border: 0;
-    }
-    h3 {
-        border: 0;
-    }
-}
-
-// extend/placeholder
-%somecode {
-    border: 0;
-    background-color: white;
-}
-
-.aClass {
-    @extend %somecode;
-    border-radius: 0;
-}
+// // variable
+// $font-stack: Tahoma,
+// Geneva,
+// Verdana,
+// sans-serif;
+// $primary-color: white;
+// // mixin
+// // @mixin listItemFormat($value1, $value2) {
+// //     border: $value1;
+// //     padding: $value2;
+// // }
+// // mixin use
+// @include listItemFormat(0, 0);
+// article section h3 {
+//     border: 0;
+// }
+// // nesting
+// article {
+//     section {
+//         border: 0;
+//     }
+//     h3 {
+//         border: 0;
+//     }
+// }
+// // extend/placeholder
+// %somecode {
+//     border: 0;
+//     background-color: white;
+// }
+// .aClass {
+//     @extend %somecode;
+//     border-radius: 0;
+// }

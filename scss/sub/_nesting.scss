@@ -3,26 +3,12 @@ main {
     @extend %mainFlex;
     flex-direction: column;
     article {
-        @extend %taskCard;
+        @extend %taskDivision;
         header {
-            /* flex  */
-            display: flex;
-            justify-content: space-between;
-            /* form */
-            width: auto;
-            padding: .5em .2em 1.5em .2em;
-            border: 0;
-            margin: 0;
-            border-color: 0;
+            @extend %taskHeader;
         }
         section {
-            width: auto;
-            padding: .8em 1.5em;
-            border: .2em solid rgba(212, 108, 10, 0.5);
-            margin: 0 .2em 1em .2em;
-            border-radius: 1em;
-            /* style */
-            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.36);
+            @extend %taskCard;
             h3 {
                 font-style: italic;
             }

@@ -1,0 +1,56 @@
+            @media all and (min-width: 1201px) {
+                body {
+                    @include mainHeaderFooter;
+                }
+                main {
+                    @include mainFlex ();
+                    flex-direction: row;
+                    @include taskMain
+                }
+            }
+            
+            @media all and (min-width: 801px) and (max-width: 1200px) {
+                body {
+                    @include mainHeaderFooter;
+                }
+                main {
+                    @include mainFlex ();
+                    flex-direction: row;
+                    @include taskMain
+                }
+            }
+            
+            @media all and (min-width: 501px) and (max-width: 800px) {
+                body {
+                    @include mainHeaderFooter;
+                }
+                main {
+                    @include mainFlex ();
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    ;
+                    @include taskMain
+                }
+            }
+            
+            @media all and (min-width: 701px) and (max-width: 1000px) {
+                body {
+                    @include mainHeaderFooter;
+                }
+                main {
+                    @include mainFlex ();
+                    flex-direction: row;
+                    @include taskMain
+                }
+            }
+            
+            @media all and (max-width: 700px) {
+                body {
+                    @include mainHeaderFooter;
+                }
+                main {
+                    @include mainFlex ();
+                    flex-direction: column;
+                    @include taskMain
+                }
+            }
