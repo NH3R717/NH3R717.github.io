@@ -101,115 +101,13 @@ p {
 time {
   font-size: 1em; }
 
+body footer {
+  color: red; }
+
 @media all and (min-width: 1201px) {
   body header {
     display: flex;
     justify-content: space-between;
-    width: auto;
-    padding: 3em 2em 2em 2em;
-    margin: 0; }
-  body footer {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: left;
-    padding: 15px; }
-  main {
-    display: flex;
-    padding: 15px;
-    height: auto;
-    flex-direction: row; }
-    main article {
-      width: auto;
-      padding: .8em 1.5em;
-      border: .2em solid;
-      border-color: rgba(212, 108, 10, 0.5);
-      margin: 0 .2em 3em .2em;
-      border-radius: 2em;
-      /* style */
-      box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.36); }
-      main article header {
-        display: flex;
-        justify-content: space-between;
-        width: auto;
-        padding: .5em .2em 1.5em .2em;
-        border: 0;
-        margin: 0;
-        border-color: 0; }
-      main article section {
-        width: auto;
-        padding: .8em 1.5em;
-        border: 0.2em solid rgba(212, 108, 10, 0.5);
-        margin: 0 .2em 1em .2em;
-        border-radius: 1em;
-        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.36); }
-        main article section h3 {
-          font-style: bold; }
-        main article section div {
-          display: flex;
-          justify-content: space-between;
-          width: auto; }
-          main article section div p {
-            text-justify: auto; }
-          main article section div time {
-            display: inline-block; } }
-
-@media all and (min-width: 801px) and (max-width: 1200px) {
-  body header {
-    display: flex;
-    justify-content: space-between;
-    width: auto;
-    padding: 3em 2em 2em 2em;
-    margin: 0; }
-  body footer {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: left;
-    padding: 15px; }
-  main {
-    display: flex;
-    padding: 15px;
-    height: auto;
-    flex-direction: row; }
-    main article {
-      width: auto;
-      padding: .8em 1.5em;
-      border: .2em solid;
-      border-color: rgba(212, 108, 10, 0.5);
-      margin: 0 .2em 3em .2em;
-      border-radius: 2em;
-      /* style */
-      box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.36); }
-      main article header {
-        display: flex;
-        justify-content: space-between;
-        width: auto;
-        padding: .5em .2em 1.5em .2em;
-        border: 0;
-        margin: 0;
-        border-color: 0; }
-      main article section {
-        width: auto;
-        padding: .8em 1.5em;
-        border: 0.2em solid rgba(212, 108, 10, 0.5);
-        margin: 0 .2em 1em .2em;
-        border-radius: 1em;
-        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.36); }
-        main article section h3 {
-          font-style: bold; }
-        main article section div {
-          display: flex;
-          justify-content: space-between;
-          width: auto; }
-          main article section div p {
-            text-justify: auto; }
-          main article section div time {
-            display: inline-block; } }
-
-@media all and (min-width: 501px) and (max-width: 800px) {
-  body header {
-    display: flex;
-    justify-content: space-between;
-    width: auto;
     padding: 3em 2em 2em 2em;
     margin: 0; }
   body footer {
@@ -224,18 +122,17 @@ time {
     flex-direction: row;
     justify-content: space-evenly; }
     main article {
-      width: auto;
+      flex: auto;
       padding: .8em 1.5em;
       border: .2em solid;
       border-color: rgba(212, 108, 10, 0.5);
-      margin: 0 .2em 3em .2em;
+      margin: 0 .6em 3em .6em;
       border-radius: 2em;
       /* style */
       box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.36); }
       main article header {
         display: flex;
         justify-content: space-between;
-        width: auto;
         padding: .5em .2em 1.5em .2em;
         border: 0;
         margin: 0;
@@ -251,18 +148,16 @@ time {
           font-style: bold; }
         main article section div {
           display: flex;
-          justify-content: space-between;
-          width: auto; }
+          justify-content: space-between; }
           main article section div p {
             text-justify: auto; }
           main article section div time {
             display: inline-block; } }
 
-@media all and (min-width: 701px) and (max-width: 1000px) {
+@media all and (min-width: 801px) and (max-width: 1200px) {
   body header {
     display: flex;
     justify-content: space-between;
-    width: auto;
     padding: 3em 2em 2em 2em;
     margin: 0; }
   body footer {
@@ -274,20 +169,20 @@ time {
     display: flex;
     padding: 15px;
     height: auto;
-    flex-direction: row; }
+    flex-direction: row;
+    justify-content: space-evenly; }
     main article {
-      width: auto;
+      flex: auto;
       padding: .8em 1.5em;
       border: .2em solid;
       border-color: rgba(212, 108, 10, 0.5);
-      margin: 0 .2em 3em .2em;
+      margin: 0 .6em 3em .6em;
       border-radius: 2em;
       /* style */
       box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.36); }
       main article header {
         display: flex;
         justify-content: space-between;
-        width: auto;
         padding: .5em .2em 1.5em .2em;
         border: 0;
         margin: 0;
@@ -303,18 +198,66 @@ time {
           font-style: bold; }
         main article section div {
           display: flex;
-          justify-content: space-between;
-          width: auto; }
+          justify-content: space-between; }
           main article section div p {
             text-justify: auto; }
           main article section div time {
             display: inline-block; } }
 
-@media all and (max-width: 700px) {
+@media all and (min-width: 631px) and (max-width: 800px) {
   body header {
     display: flex;
     justify-content: space-between;
-    width: auto;
+    padding: 3em 2em 2em 2em;
+    margin: 0; }
+  body footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+    padding: 15px; }
+  main {
+    display: flex;
+    padding: 15px;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-evenly; }
+    main article {
+      flex: auto;
+      padding: .8em 1.5em;
+      border: .2em solid;
+      border-color: rgba(212, 108, 10, 0.5);
+      margin: 0 .6em 3em .6em;
+      border-radius: 2em;
+      /* style */
+      box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.36); }
+      main article header {
+        display: flex;
+        justify-content: space-between;
+        padding: .5em .2em 1.5em .2em;
+        border: 0;
+        margin: 0;
+        border-color: 0; }
+      main article section {
+        width: auto;
+        padding: .8em 1.5em;
+        border: 0.2em solid rgba(212, 108, 10, 0.5);
+        margin: 0 .2em 1em .2em;
+        border-radius: 1em;
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.36); }
+        main article section h3 {
+          font-style: bold; }
+        main article section div {
+          display: flex;
+          justify-content: space-between; }
+          main article section div p {
+            text-justify: auto; }
+          main article section div time {
+            display: inline-block; } }
+
+@media all and (max-width: 630px) {
+  body header {
+    display: flex;
+    justify-content: space-between;
     padding: 3em 2em 2em 2em;
     margin: 0; }
   body footer {
@@ -328,18 +271,17 @@ time {
     height: auto;
     flex-direction: column; }
     main article {
-      width: auto;
+      flex: auto;
       padding: .8em 1.5em;
       border: .2em solid;
       border-color: rgba(212, 108, 10, 0.5);
-      margin: 0 .2em 3em .2em;
+      margin: 0 .6em 3em .6em;
       border-radius: 2em;
       /* style */
       box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.36); }
       main article header {
         display: flex;
         justify-content: space-between;
-        width: auto;
         padding: .5em .2em 1.5em .2em;
         border: 0;
         margin: 0;
@@ -355,8 +297,7 @@ time {
           font-style: bold; }
         main article section div {
           display: flex;
-          justify-content: space-between;
-          width: auto; }
+          justify-content: space-between; }
           main article section div p {
             text-justify: auto; }
           main article section div time {

@@ -3,8 +3,8 @@
                     @include mainHeaderFooter;
                 }
                 main {
-                    @include mainFlex ();
-                    flex-direction: row;
+                    @include mainFlex;
+                    @include aboveMobileFlex;
                     @include taskMain
                 }
             }
@@ -14,43 +14,35 @@
                     @include mainHeaderFooter;
                 }
                 main {
-                    @include mainFlex ();
-                    flex-direction: row;
+                    @include mainFlex;
+                    @include aboveMobileFlex;
                     @include taskMain
                 }
             }
             
-            @media all and (min-width: 501px) and (max-width: 800px) {
+            @media all and (min-width: 631px) and (max-width: 800px) {
                 body {
                     @include mainHeaderFooter;
                 }
                 main {
-                    @include mainFlex ();
-                    flex-direction: row;
-                    justify-content: space-evenly;
-                    ;
+                    @include mainFlex;
+                    @include aboveMobileFlex;
                     @include taskMain
                 }
             }
             
-            @media all and (min-width: 701px) and (max-width: 1000px) {
+            @media all and (max-width: 630px) {
                 body {
                     @include mainHeaderFooter;
                 }
                 main {
-                    @include mainFlex ();
-                    flex-direction: row;
-                    @include taskMain
-                }
-            }
-            
-            @media all and (max-width: 700px) {
-                body {
-                    @include mainHeaderFooter;
-                }
-                main {
-                    @include mainFlex ();
+                    @include mainFlex;
                     flex-direction: column;
                     @include taskMain
                 }
+            }
+            
+            // extend/placeholders will not compose for media queries in SASS
+            body footer {
+                @extend %footerColor
             }

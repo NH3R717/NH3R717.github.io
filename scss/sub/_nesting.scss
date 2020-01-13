@@ -1,19 +1,18 @@
 // nested main content
-main {
-    @extend %mainFlex;
-    flex-direction: column;
+@mixin taskMain {
     article {
-        @extend %taskDivision;
+        @include taskDivision ();
         header {
-            @extend %taskHeader;
+            @include taskHeader
         }
         section {
-            @extend %taskCard;
+            @include taskCard;
             h3 {
-                font-style: italic;
+                font-style: bold;
             }
             div {
-                justify-content: center;
+                display: flex;
+                justify-content: space-between;
                 p {
                     text-justify: auto;
                 }
