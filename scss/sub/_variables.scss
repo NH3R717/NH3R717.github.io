@@ -1,11 +1,8 @@
-$font-stack: Tahoma,
+$fontStack: Tahoma,
 Geneva,
 Verdana,
 sans-serif;
-$primary-color: color;
-@mixin listItemFormat($value1, $value2) {
-    border: $value1;
-    padding: $value2;
-}
-
-@include listItemFormat(0, 0)
+$fontSize: 62.5%;
+// colors
+$borderColor: rgba(212, 108, 10, 0.5);
+$boxShadow: rgba(0, 0, 0, 0.36);

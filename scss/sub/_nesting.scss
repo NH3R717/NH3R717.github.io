@@ -1,12 +1,40 @@
-article section h3 {
-    border: 0;
-}
-
-article {
-    section {
-        border: 0;
-    }
-    h3 {
-        border: 0;
+// nested main content
+main {
+    @extend %mainFlex;
+    flex-direction: column;
+    article {
+        @extend %taskCard;
+        header {
+            /* flex  */
+            display: flex;
+            justify-content: space-between;
+            /* form */
+            width: auto;
+            padding: .5em .2em 1.5em .2em;
+            border: 0;
+            margin: 0;
+            border-color: 0;
+        }
+        section {
+            width: auto;
+            padding: .8em 1.5em;
+            border: .2em solid rgba(212, 108, 10, 0.5);
+            margin: 0 .2em 1em .2em;
+            border-radius: 1em;
+            /* style */
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.36);
+            h3 {
+                font-style: italic;
+            }
+            div {
+                justify-content: center;
+                p {
+                    text-justify: auto;
+                }
+                time {
+                    display: inline-block;
+                }
+            }
+        }
     }
 }

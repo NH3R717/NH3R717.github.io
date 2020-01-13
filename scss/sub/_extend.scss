@@ -1,1 +1,27 @@
- 
+// %somecode {
+//     border: 0;
+//     background-color: white;
+// }
+// .aClass {
+//     @extend %somecode;
+//     border-radius: 0;
+// }
+%mainFlex {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    height: auto;
+}
+
+// flex-direction: column/row;
+%taskCard {
+    width: auto;
+    padding: .8em 1.5em;
+    border: .2em solid $borderColor;
+    // border-color: $borderColor;
+    margin: 0 .2em 3em .2em;
+    border-radius: 2em;
+    /* style */
+    box-shadow: 2px 2px 2px $boxShadow;
+    // box-shadow: $boxShadow;
+}
