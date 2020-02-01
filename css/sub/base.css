@@ -1,0 +1,11 @@
+html {
+  height: 100%;
+  position: relative; }
+
+body {
+  padding: 6em;
+  margin: 2em;
+  height: 100%;
+  border: .2em solid grey;
+  border-radius: 3em;
+  background-color: rgba(255, 255, 255, 0.6); }
