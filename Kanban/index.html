@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- /* 
+    • Umholtz, Tommy
+    • Full Sail University
+    • Web Design and Development, Bachelors of Science – Online
+    • Web Design Standards 2 (WDSII)
+    
+    */ -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WDSII Task Manager</title>
+    <link rel="stylesheet" type="text/css" href="../Kanban/css/main.css">
+
+</head>
+
+<body>
+
+    <header id="pageHeader">
+        <h1>Task Tracker</h1>
+        <button id="mascotButton">Mascot</button>
+    </header>
+
+    <main>
+        <section aria-label="tasks that need to be completed" id="toDo">
+
+            <header>
+                <h2>To Do</h2>
+                <button class="addTask">Add</button>
+            </header>
+
+        </section>
+
+        <section aria-label="tasks that are in progress" id="inProgress">
+
+            <header>
+                <h2>In Progress</h2>
+                <button class="addTask">Add</button>
+            </header>
+
+        </section>
+
+        <section aria-label="tasks that are completed" id="complete">
+
+            <header>
+                <h2>Complete</h2>
+                <button aria-label="add new task button" class="addTask">Add</button>
+            </header>
+
+        </section>
+
+    </main>
+
+    <!-- Pokemon Modal -->
+
+    <form hidden id="mascotModal" role="form">
+
+        <article class="modal-content" aria-label="mascot selection modal window">
+
+            <header>
+                <button id="close" aria-label="modal close button">&times;</button>
+                <h3>Page Mascot</h3>
+            </header>
+
+            <section class="modal-body">
+                <h4>Type the name of your favorite Pokémon.</h4>
+
+                <div onsubmit="saveBtn.onclick()">
+                    <input id=inputPokemon aria-label="pokemon mascot input field" required minlength="4" maxlength="10" type="text" placeholder="    e.g. 'Charizard'">
+                    <button type="button" id="addPokemon" aria-label="pokemon mascot submit button">Save</button>
+                </div>
+
+            </section>
+        </article>
+
+    </form>
+
+    <footer></footer>
+
+    <script src="js/glitchGet.js"></script>
+    <script src="js/glitchPost.js"></script>
+    <script src="js/pokeGet.js"></script>
+
+</body>
+
+</html>
