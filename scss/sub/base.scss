@@ -1,14 +1,43 @@
 html {
     height: 100%;
     position: relative;
+    body {
+        font-family: 'Pacifico';
+        text-shadow: 0.05em 0.05em 0.07em grey;
+        padding: 1.6em;
+        margin: 2.8em;
+        height: 100%;
+        border: .2em solid grey;
+        border-radius: 3em;
+        background-color: rgba(255, 255, 255, 0.60);
+    }
+    h1 {
+        font-size: 4em;
+        text-align: center;
+    }
+    article {
+        section {
+            font-family: 'BPMono';
+            padding-left: 1.3em;
+        }
+        header h2 {
+            font-size: 3em;
+        }
+        H3 {
+            font-size: 2.5em;
+            margin: .4em 0;
+        }
+        h4 {
+            font-size: 2em;
+            padding: 1.6em 0em 0.4em;
+        }
+        a {
+            font-size: 1.5em;
+            padding: 0 0 .3em .5em;
+        }
+    }
 }
 
-body {
-    font-family: 'Pacifico';
-    padding: 2.2em;
-    margin: 2em;
-    height: 100%;
-    border: .2em solid grey;
-    border-radius: 3em;
-    background-color: rgba(255, 255, 255, 0.60);
-}
+@media all and (min-width: 500px) {}
+
+@media all and (max-width: 400px) {}
