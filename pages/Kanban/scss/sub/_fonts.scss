@@ -5,5 +5,10 @@ Verdana,
 sans-serif;
 @font-face {
     font-family: "Andrographis";
-    src: url("/pages/Kanban/fonts/andrographis/Andrographis.otf");
+    src: url("../pages/Kanban/fonts/Andrographis.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "Pacifico";
+    src: url("./pages/Kanban/fonts/Pacifico.ttf") format("ttf");
 }
