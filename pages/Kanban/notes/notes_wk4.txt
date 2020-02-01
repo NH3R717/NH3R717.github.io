@@ -56,7 +56,7 @@ Video Review
 * expand on usability and javascript validation
 • 
 
-Assignment Requirements
+Assignment Milestone_4 Requirements
 
 [x] use of transitions – transitions implemented in mascot modal
 [x] multiple browser testing – 
@@ -65,7 +65,7 @@ Assignment Requirements
     [x] Chrome/Brave
 [x] Code Review and Update
     [x] remove dev comments and console.logs()
-    []  update readme.md
+    [x]  update readme.md
 
 Issues Mentioned in Feedback Video
 
