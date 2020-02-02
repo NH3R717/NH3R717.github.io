@@ -1,7 +1,5 @@
-/node_modules
-Kanban/notes
+*node_modules*
 gulp.js
 .vscode
-NH3R717.github.io/pages/Kanban/node_modules/
-
-  
+*/pages/Kanban*
+/NH3R717.github.io/pages/Kanban

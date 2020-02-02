@@ -1,0 +1,14 @@
+https://stackoverflow.com/questions/22924633/gitignore-is-not-ignoring-directories
+
+Since the node_modules directory is already tracked as part of the repository, the .gitignore rule will not apply to it.
+
+You need to untrack the directory from git using
+
+git rm -r --cached node_modules
+git commit -m "removing node_modules"
+
+You can run the above 2 in git-bash.
+
+After this, the .gitignore rule will ignore the directory away.
+
+Note that this will remove the directory node_modules from your other repos once you pull the changes in. Only the original repo where you made that commit will still have the node_modules folder there.
