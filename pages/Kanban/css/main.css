@@ -117,7 +117,27 @@ p {
 time {
   font-size: 1em; }
 
-#mascotModal {
+#taksModle .modalBody {
+  display: inline-flex; }
+
+#inputContainer {
+  display: inline-flex; }
+  #inputContainer #taskModalLabels {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.6em;
+    padding: 0 0 0 2em; }
+  #inputContainer #taskModalFields {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.6em;
+    padding: 3 0 0 2em; }
+
+#dateInputAndBtn {
+  font-size: 1.6em;
+  padding: 0 0 0 2em; }
+
+.modal {
   display: none;
   position: fixed;
   z-index: 1;
@@ -127,7 +147,7 @@ time {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4); }
-  #mascotModal article {
+  .modal article {
     position: relative;
     margin: auto;
     padding: 0;
@@ -136,14 +156,14 @@ time {
     box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.555);
     animation-name: animatetop;
     animation-duration: 0.5s; }
-    #mascotModal article header #close {
+    .modal article header .modalClose {
       color: #0a79d4;
       margin-top: -.15em;
       border: none;
       float: right;
       font-size: 28px;
       font-weight: bold; }
-    #mascotModal article header h3 {
+    .modal article header h3 {
       font-weight: bold;
       font-size: 1.6em;
       text-shadow: 0.05em 0.05em 0.07em grey;
@@ -151,29 +171,38 @@ time {
       padding: .2em .4em;
       background-color: #ebdd63;
       border-bottom: 0.1em solid rgba(10, 121, 212, 0.5); }
-    #mascotModal article section {
+    .modal article section {
       padding: .2em 2em .8em 1.4em;
       background-color: #dad28a; }
-      #mascotModal article section h4 {
+      .modal article section h4 {
         padding: .8em 0 .8em .4em;
         font-size: 1.2em;
         text-shadow: 0.05em 0.05em 0.07em grey;
         color: #494313; }
-      #mascotModal article section div {
+      .modal article section #mascotModal div {
         display: flex;
         justify-content: space-between; }
-        #mascotModal article section div input {
+        .modal article section #mascotModal div input {
           margin-left: 1em;
           height: 1.5em;
           margin-top: 0.9em; }
-        #mascotModal article section div #addPokemon {
+        .modal article section #mascotModal div .modalSubmitBtn {
           font-size: 3em;
           margin-bottom: .2em; }
-          #mascotModal article section div #addPokemon :hover,
-          #mascotModal article section div #addPokemon :focus {
+          .modal article section #mascotModal div .modalSubmitBtn :hover,
+          .modal article section #mascotModal div .modalSubmitBtn :focus {
             color: #000;
             text-decoration: none;
             cursor: pointer; }
+
+#pokeSubmitBtn {
+  font-size: 3em;
+  margin-bottom: .2em; }
+  #pokeSubmitBtn :hover,
+  #pokeSubmitBtn :focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer; }
 
 @keyframes animatetop {
   from {
@@ -457,11 +486,13 @@ textarea {
   #mascotButton {
     transform: scale(1.2); } }
 
-@media all and (min-width: 0px) and (max-width: 360px) {
+@media all and (min-width: 0px) and (max-width: 376px) {
   body header h1 {
     font-size: 1.2em; }
   #mascotButton {
-    transform: scale(0.9); } }
+    transform: scale(0.9); }
+  #taskModal article {
+    width: 95%; } }
 
 body {
   background-image: radial-gradient(circle at 100% 150%, #ebdd63 24%, #dad28a 24%, #dad28a 28%, #ebdd63 28%, #ebdd63 36%, #dad28a 36%, #dad28a 40%, transparent 40%, transparent), radial-gradient(circle at 0 150%, #ebdd63 24%, #dad28a 24%, #dad28a 28%, #ebdd63 28%, #ebdd63 36%, #dad28a 36%, #dad28a 40%, transparent 40%, transparent), radial-gradient(circle at 50% 100%, #dad28a 10%, #ebdd63 10%, #ebdd63 23%, #dad28a 23%, #dad28a 30%, #ebdd63 30%, #ebdd63 43%, #dad28a 43%, #dad28a 50%, #ebdd63 50%, #ebdd63 63%, #dad28a 63%, #dad28a 71%, transparent 71%, transparent), radial-gradient(circle at 100% 50%, #dad28a 5%, #ebdd63 5%, #ebdd63 15%, #dad28a 15%, #dad28a 20%, #ebdd63 20%, #ebdd63 29%, #dad28a 29%, #dad28a 34%, #ebdd63 34%, #ebdd63 44%, #dad28a 44%, #dad28a 49%, transparent 49%, transparent), radial-gradient(circle at 0 50%, #dad28a 5%, #ebdd63 5%, #ebdd63 15%, #dad28a 15%, #dad28a 20%, #ebdd63 20%, #ebdd63 29%, #dad28a 29%, #dad28a 34%, #ebdd63 34%, #ebdd63 44%, #dad28a 44%, #dad28a 49%, transparent 49%, transparent);

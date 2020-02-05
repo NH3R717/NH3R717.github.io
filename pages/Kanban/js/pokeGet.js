@@ -6,62 +6,67 @@
    
    */
 
-const pokeAPI = {
-    url: 'https://pokeapi.co/api/v2',
-    type: 'pokemon'
-};
+/* Modal New */
 
-const { url, type } = pokeAPI;
-const pokeGetApi = `${url}/${type}/`;
+(function modalAction() {
 
-const pokeSaveBtn = document.querySelector("#addPokemon");
+    const modal = document.querySelector("#mascotModal");
 
-pokeSaveBtn.onclick = function(event) {
+    document.querySelector("#mascotButton").addEventListener("click", function() {
+        modal.style.display = "block";
+    });
 
-    const pokemonChoice = document.querySelector("#inputPokemon");
-    const pokemonLower = pokemonChoice.value.toLowerCase();
-    localStorage.setItem(1, pokemonLower);
-    window.location.reload();
-};
-
-const pokeStorage = localStorage.getItem("1");
-
-const pokeGetApiUrl = `${pokeGetApi}${pokeStorage}`;
-
-const updateMascot = fetch(pokeGetApiUrl)
-    .then(data => data.json())
-    .then(pokemon => {
-        generateHTML(pokemon);
-    })
-    .catch(error => {});
-
-const generateHTML = (data) => {
-
-    const html = `
-    <img src=${data.sprites.front_default}  height="175" width="175">`
-    const pokemonDiv = document.querySelector('footer');
-    pokemonDiv.innerHTML = html;
-
-};
-
-/* Modal */
-
-const modal = document.querySelector("#mascotModal");
-
-const newMascotBtn = document.querySelector("#mascotButton");
-
-const closeBtn = document.querySelector("#close");
-
-newMascotBtn.onclick = function() {
-    modal.style.display = "block";
-};
-
-closeBtn.onclick = function() {
-    modal.style.display = "none";
-};
-
-window.onclick = function(event) {
-    if (event.target == modal) {
+    document.querySelector(".modalClose").addEventListener("click", function() {
         modal.style.display = "none";
-    }
-};
+    });
+
+    window.addEventListener("click", function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    });
+
+})();
+
+
+(function mascotSave() {
+
+    const pokeAPI = {
+        url: 'https://pokeapi.co/api/v2',
+        type: 'pokemon'
+    };
+
+    const { url, type } = pokeAPI;
+    const pokeGetApi = `${url}/${type}/`;
+
+    const pokeStorage = localStorage.getItem("1");
+
+    const pokeGetApiUrl = `${pokeGetApi}${pokeStorage}`;
+
+    fetch(pokeGetApiUrl)
+        .then(data => data.json())
+        .then(pokemon => {
+            generateHTML(pokemon);
+        })
+        .catch(error => {});
+
+    const generateHTML = (data) => {
+
+        const html = `<img src=${data.sprites.front_default} height="175" width="175">`
+
+        const pokemonDiv = document.querySelector('footer');
+        pokemonDiv.innerHTML = html;
+
+    };
+
+    // document.querySelector('#mascotModal').onkeypress = console.log('this doesn\'t work');
+
+    document.querySelector('#mascotModal').disabled = true;
+
+    document.querySelector("#pokeSubmitBtn").addEventListener('click', function() {
+        const pokemonChoice = document.querySelector("#inputPokemon");
+        const pokemonLower = pokemonChoice.value.toLowerCase();
+        localStorage.setItem(1, pokemonLower);
+        window.location.reload();
+    });
+})();

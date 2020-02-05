@@ -108,17 +108,17 @@ Notes to instructor – wasn't able to apply CSS rules to task form for some rea
 
 [x] minlength attribute duplicated = removed one instance
 
-[o] mascot modal refactor button html onClick  – time constrain prevent this
+[x] mascot modal refactor button html onClick  – time constrain prevent this
 
 [0] add form action= removed all form actions (not required) and method attribute from form elements
  
-[o] unnecessary use of ID (body header) – * using element selector gives unwanted styles to the modal header
+[x] unnecessary use of ID (body header) – * using element selector gives unwanted styles to the modal header
 
 [x] unit consistency (px / rem / em) – refactored to consistent use of em
 
 [x] use of negative margin – changed instance mentioned in the video but added in another section (* according to W3C negative margin is 'ok' - https://www.w3.org/TR/CSS2/box.html#margin-properties "Negative values for margin properties are allowed, but there may be implementation-specific limits.")
 
-[o] event listener  – time constrain prevent this
+[x] event listener  – time constrain prevent this
 
 [x] button type vs submit – use submit
 
@@ -137,6 +137,8 @@ Notes to instructor – wasn't able to apply CSS rules to task form for some rea
 [x] more descriptive function names – button() to addTaskBtn()
 
 [x] remove var as variable declaration
+
+[x] refactored inline form to modal
 
 – Code Quality
 
@@ -185,3 +187,107 @@ Notes to instructor – wasn't able to apply CSS rules to task form for some rea
 • event listeners for task add buttons
     * make self evoking
 • refactor variable declarations
+
+
+/* Modal */
+
+// const modal = document.querySelector("#mascotModal");
+
+// const newMascotBtn = document.querySelector("#mascotButton");
+
+// const closeBtn = document.querySelector("#close");
+
+// // newMascotBtn.onclick = function() {
+// //     modal.style.display = "block";
+// // };
+
+// newMascotBtn.addEventListener("click", modal.style.display = "block");
+
+// // closeBtn.onclick = function() {
+// //     modal.style.display = "none";
+// // };
+// closeBtn.addEventListener("click", modal.style.display = "none");
+
+// // window.onclick = function(event) {
+// //     if (event.target == modal) {
+// //         modal.style.display = "none";
+// //     }
+// // };
+
+// object.addEventListener("click", (event) {
+//     if (event.target == modal) {
+//         modal.style.display = "none";
+//     }
+// });
+
+// object.addEventListener("click", myScript);
+
+/* Modal */
+
+const modal = document.querySelector("#mascotModal");
+
+modal.addEventListener('submit', function(e) {
+
+    e.preventDefault();
+
+    const closeBtn = document.querySelector("#close");
+
+    const newMascotBtn = document.querySelector("#mascotButton");
+
+    const addPokeBtn = document.querySelector("#addPokemon");
+
+    addPokeBtn.addEventListener("submit");
+
+    newMascotBtn.addEventListener("click"); {
+        modal.style.display = "block";
+    };
+
+    closeBtn.addEventListener("click"); {
+        modal.style.display = "none";
+    };
+
+    window.addEventListener("click"); {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    };
+});
+
+Original
+
+
+/* Modal */
+
+const modal = document.querySelector("#mascotModal");
+
+// const newMascotBtn = document.querySelector("#mascotButton");
+
+// const closeBtn = document.querySelector("#close");
+
+// const addPokeBtn = document.querySelector("#addPokemon");
+
+// addPokeBtn.addEventListener("submit");
+
+document.querySelector("#mascotButton").addEventListener("click", function() {
+    modal.style.display = "block";
+});
+
+document.querySelector("#close").addEventListener("click", function() {
+    modal.style.display = "none";
+});
+
+document.getElementById("myBtn").addEventListener("click", function() {
+    document.getElementById("demo").innerHTML = "Hello World";
+});
+
+// window.addEventListener("click", function() {
+//     if (event.target == modal) {
+//         modal.style.display = "none";
+//     }
+// });
+
+window.addEventListener("click"); {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+};

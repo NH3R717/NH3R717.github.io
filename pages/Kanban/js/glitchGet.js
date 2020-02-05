@@ -26,7 +26,6 @@ const glitchGetApiUrl = `${base}${get}${token}`;
 // glitchGetApiUrl = 'https://painted-rodent.glitch.me/api/lists?accessToken=5b1064585f4ab8706d275f90';
 
 fetch(glitchGetApiUrl)
-    // .then((data) => console.log(data.json()))
     .then((data) => data.json())
     .then((kanban) => forHtml(kanban));
 

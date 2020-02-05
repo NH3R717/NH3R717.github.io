@@ -28,19 +28,13 @@
                              }
                              
                              html {
-                                 //  position: relative;
-                                 //  height: inherit;
-                                 //  height: 100%;
-                                 //  height: calc(100% - 5.8em);
+                                 position: relative;
+                                 min-height: 100%;
                              }
                              
                              body {
                                  margin: 0 0 16em;
-                                 padding: 1.2em;
-                                 position: relative;
-                                 height: inherit;
-                                 height: 100%;
-                                 height: calc(100% - 5.8em);
+                                 padding: 1.2em
                              }
                              
                              #mascotButton {
@@ -132,12 +126,15 @@
                                  }
                              }
                              
-                             @media all and (min-width: 0px) and (max-width: 360px) {
+                             @media all and (min-width: 0px) and (max-width: 376px) {
                                  body header h1 {
                                      font-size: 1.2em;
                                  }
                                  #mascotButton {
                                      transform: scale(.9);
+                                 }
+                                 #taskModal article {
+                                     width: 95%;
                                  }
                              }
                              

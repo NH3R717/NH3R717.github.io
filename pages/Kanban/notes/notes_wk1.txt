@@ -8,8 +8,11 @@ git reset --soft HEAD~1
 git push origin – 'adds' file changes to online remote git repository (origin is an optional name for a remote repo)
 git remote -v – checks remote 'origin' (url)
 git remote add origin `url/to/your/fork`
-git fetch – like add
-git pull – like push
+git fetch – like add ?
+git pull – like push but takes from the remote
+git stash – so you can change your working dir when you have changes that are dissimilar (uncommitted / forgot to change directories) 
+git stash apply – after you go to the new dir you can add these changes
+
 feature branch workflow
 
 https://github.com/NH3R717/NH3R717.github.io
