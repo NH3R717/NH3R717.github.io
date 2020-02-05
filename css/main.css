@@ -123,6 +123,16 @@ html {
   flex-direction: column; }
   html body {
     height: 100%; }
+  html main {
+    font-family: 'Pacifico';
+    text-shadow: 0.11em 0.11em 0.11em #5a5a5a;
+    padding: 1.6em;
+    margin: 2.8em;
+    height: auto;
+    position: relative;
+    border: .2em solid grey;
+    border-radius: 3em;
+    background-color: rgba(255, 255, 255, 0.6); }
   html h1 {
     font-size: 4em;
     color: #e1ac26;
@@ -144,18 +154,6 @@ html {
   html article a {
     font-size: 1.5em;
     padding: 0 0 .3em .5em; }
-
-main {
-  font-family: 'Pacifico';
-  text-shadow: 0.11em 0.11em 0.11em #5a5a5a;
-  padding: 1.6em;
-  margin: 2.8em;
-  height: auto;
-  position: relative;
-  border: .2em solid grey;
-  border-radius: 3em;
-  background-color: rgba(255, 255, 255, 0.6); }
-
-@media all and (min-width: 380px) {
-  main {
-    height: 100%; } }
+  @media all and (min-width: 380px) {
+    html main {
+      height: 100%; } }

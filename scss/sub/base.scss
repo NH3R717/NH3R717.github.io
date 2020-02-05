@@ -6,6 +6,17 @@ html {
     body {
         height: 100%
     }
+    main {
+        font-family: 'Pacifico';
+        text-shadow: 0.11em 0.11em 0.11em rgb(90, 90, 90);
+        padding: 1.6em;
+        margin: 2.8em;
+        height: auto;
+        position: relative;
+        border: .2em solid grey;
+        border-radius: 3em;
+        background-color: rgba(255, 255, 255, 0.60);
+    }
     h1 {
         font-size: 4em;
         color: rgb(225, 172, 38);
@@ -35,22 +46,9 @@ html {
             padding: 0 0 .3em .5em;
         }
     }
-}
-
-main {
-    font-family: 'Pacifico';
-    text-shadow: 0.11em 0.11em 0.11em rgb(90, 90, 90);
-    padding: 1.6em;
-    margin: 2.8em;
-    height: auto;
-    position: relative;
-    border: .2em solid grey;
-    border-radius: 3em;
-    background-color: rgba(255, 255, 255, 0.60);
-}
-
-@media all and (min-width: 380px) {
-    main {
-        height: 100%
+    @media all and (min-width: 380px) {
+        main {
+            height: 100%
+        }
     }
 }
