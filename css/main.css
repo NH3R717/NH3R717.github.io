@@ -1,17 +1,14 @@
 @font-face {
-    font-family: "Andrographis";
-    src: url("/fonts/Andrographis.ttf");
-}
+  font-family: "Andrographis";
+  src: url("/fonts/Andrographis.ttf"); }
 
 @font-face {
-    font-family: "Pacifico";
-    src: url("/fonts/Pacifico.ttf");
-}
+  font-family: "Pacifico";
+  src: url("/fonts/Pacifico.ttf"); }
 
 @font-face {
-    font-family: "BPMono";
-    src: url("/fonts/BPmono.ttf");
-}
+  font-family: "BPMono";
+  src: url("/fonts/BPmono.ttf"); }
 
 html,
 body,
@@ -90,95 +87,77 @@ time,
 mark,
 audio,
 video {
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-    margin: 0;
-    padding: 0;
-}
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0; }
 
 html {
-    font-size: 62.5%;
-    font-family: Tahoma, Geneva, Verdana, sans-serif;
-}
+  font-size: 62.5%;
+  font-family: Tahoma, Geneva, Verdana, sans-serif; }
 
 h1 {
-    font-size: 1.6em;
-}
+  font-size: 1.6em; }
 
 h2 {
-    font-size: 1.4em;
-}
+  font-size: 1.4em; }
 
 h3 {
-    font-size: 1.2em;
-}
+  font-size: 1.2em; }
 
 p {
-    font-size: 1em;
-}
+  font-size: 1em; }
 
 time {
-    font-size: 1em;
-}
+  font-size: 1em; }
 
 html {
-    background: radial-gradient(circle at 0% 50%, rgba(96, 16, 48, 0) 9px, #613 10px, rgba(96, 16, 48, 0) 11px) 0px 10px, radial-gradient(at 100% 100%, rgba(96, 16, 48, 0) 9px, #613 10px, rgba(96, 16, 48, 0) 11px), rgba(136, 170, 51, 0.3);
-    background-size: 20px 20px;
-}
+  background: radial-gradient(circle at 0% 50%, rgba(96, 16, 48, 0) 9px, #613 10px, rgba(96, 16, 48, 0) 11px) 0px 10px, radial-gradient(at 100% 100%, rgba(96, 16, 48, 0) 9px, #613 10px, rgba(96, 16, 48, 0) 11px), rgba(136, 170, 51, 0.3);
+  background-size: 20px 20px; }
 
 html body {
-    height: 100%;
-}
+  height: 100%; }
 
 html h1 {
-    font-size: 4em;
-    color: #e1ac26;
-    text-align: center;
-}
+  font-size: 4em;
+  color: #e1ac26;
+  text-align: center; }
 
 html article section {
-    font-family: 'BPMono';
-    padding-left: 1.3em;
-}
+  font-family: 'BPMono';
+  padding-left: 1.3em; }
 
 html article header h2 {
-    font-size: 3em;
-    color: #316b98;
-}
+  font-size: 3em;
+  color: #316b98; }
 
 html article H3 {
-    font-size: 2em;
-    color: #28465b;
-    margin: .4em 0;
-}
+  font-size: 2em;
+  color: #28465b;
+  margin: .4em 0; }
 
 html article h4 {
-    font-size: 2em;
-    color: #2089da;
-    padding: 1.6em 0em 0.4em;
-}
+  font-size: 2em;
+  color: #2089da;
+  padding: 1.6em 0em 0.4em; }
 
 html article a {
-    font-size: 1.5em;
-    padding: 0 0 .3em .5em;
-}
+  font-size: 1.5em;
+  padding: 0 0 .3em .5em; }
 
 main {
-    font-family: 'Pacifico';
-    text-shadow: 0.11em 0.11em 0.11em #5a5a5a;
-    padding: 1.6em;
-    margin: 2.8em;
-    height: auto;
-    position: relative;
-    border: .2em solid grey;
-    border-radius: 3em;
-    background-color: rgba(255, 255, 255, 0.6);
-}
+  font-family: 'Pacifico';
+  text-shadow: 0.11em 0.11em 0.11em #5a5a5a;
+  padding: 1.6em;
+  margin: 2.8em;
+  height: auto;
+  position: relative;
+  border: .2em solid grey;
+  border-radius: 3em;
+  background-color: rgba(255, 255, 255, 0.6); }
 
 @media all and (min-width: 380px) {
-    main {
-        height: 100%;
-    }
-}
+  main {
+    height: 100%; } }
