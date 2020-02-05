@@ -1,6 +1,8 @@
 html {
     height: 100%;
-    position: relative;
+    // position: relative;
+    display: flex;
+    flex-direction: column;
     body {
         font-family: 'Pacifico';
         text-shadow: 0.05em 0.05em 0.07em grey;
