@@ -28,14 +28,19 @@
                              }
                              
                              html {
-                                 position: relative;
+                                 //  position: relative;
+                                 //  height: inherit;
                                  //  height: 100%;
-                                 height: calc(100% - 5.8em);
+                                 //  height: calc(100% - 5.8em);
                              }
                              
                              body {
                                  margin: 0 0 16em;
-                                 padding: 1.2em
+                                 padding: 1.2em;
+                                 position: relative;
+                                 height: inherit;
+                                 height: 100%;
+                                 height: calc(100% - 5.8em);
                              }
                              
                              #mascotButton {
