@@ -3,12 +3,13 @@ html body {
 
 html h1 {
   font-size: 4em;
+  text-shadow: 0.05em 0.1em 0.06em #5a5a5a;
   color: #e1ac26;
   text-align: center; }
 
 html article section {
   font-family: 'BPMono';
-  padding-left: 1.3em; }
+  padding: 0 0 1.3em 1.3em; }
 
 html article header h2 {
   font-size: 3em;
@@ -37,7 +38,7 @@ main {
   position: relative;
   border: .2em solid grey;
   border-radius: 3em;
-  background-color: rgba(255, 255, 255, 0.6); }
+  background-color: rgba(255, 255, 255, 0.7); }
 
 @media all and (min-width: 380px) {
   main {
