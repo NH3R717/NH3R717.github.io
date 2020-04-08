@@ -99,7 +99,9 @@ html {
   font-family: Tahoma, Geneva, Verdana, sans-serif; }
 
 h1 {
-  font-size: 1.6em; }
+  font-size: 1.6em;
+  line-height: 1.4em;
+ }
 
 h2 {
   font-size: 1.4em; }
@@ -124,7 +126,11 @@ html h1 {
   font-size: 4em;
   text-shadow: 0.05em 0.1em 0.06em #5a5a5a;
   color: #e1ac26;
-  text-align: center; }
+  text-align: center; 
+}
+header{
+padding-bottom: 1em;
+  }
 
 html article section {
   font-family: 'BPMono';
