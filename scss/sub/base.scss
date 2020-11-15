@@ -1,60 +1,78 @@
 html {
-    // height: 100%
-    body {
-        height: 100%
-    }
-    h1 {
-        font-size: 4em;
-        text-shadow: 0.02em 0.05em 0.06em #5a5a5a;
-        color: rgb(225, 172, 38);
-        text-align: Left;
-        padding: 0 0 .5em .2em
-    }
-    article {
-        section {
-            font-family: 'BPMono';
-            padding: 0 0 1.3em 1.3em;
-        }
-        header h2 {
-            font-size: 3em;
-            color: rgb(49, 107, 152);
-        }
-        H3 {
-            font-size: 2em;
-            color: rgb(40, 70, 91);
-            margin: .4em 0;
-        }
-        h4 {
-            font-size: 2em;
-            color: rgb(32, 137, 218);
-            padding: 1.6em 0em 0.4em;
-        }
-        a {
-            font-size: 1.5em;
-            padding: 0 0 .3em .5em;
-        }
-    }
+    display: flex;
+    flex-flow: column;
     height: 100%;
-    background-color: rgba(90, 90, 90, .36);
-
-}
-
-main {
-    font-family: 'Comfortaa';
-    text-shadow: 0.02em 0.05em 0.06em rgb(90, 90, 90);
+  body {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    padding-bottom: 2.4em;
+  }
+  h1 {
+    font-size: 4em;
+    text-shadow: 0.02em 0.05em 0.06em #5a5a5a;
+    color: rgb(225, 172, 38);
+    text-align: Left;
+    padding: 0 0 0.5em 0.2em;
+  }
+  h2 {
+    font-size: 3em;
+    color: rgb(49, 107, 152);
+  }
+  article {
+    font-family: "BPMono";
+    padding: 0 0 1.3em 1.3em;
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    h3 {
+      font-size: 2em;
+      color: rgb(40, 70, 91);
+      margin: 0.4em 0;
+    }
+    h4 {
+      font-size: 2em;
+      color: rgb(32, 137, 218);
+      padding: 1.6em 0em 0.4em;
+    }
+    a {
+      font-size: 1.5em;
+      padding: 0 0 0.3em 0.5em;
+    }
+    // background-color: rgba(195, 195, 195);
+  }
+  footer {
+    position: fixed;
+    height: 2.5em;
+    bottom: -3em;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1030;
+    background-color: rgba(195, 195, 195, 1);
+    h6 {
+      // font-family: "Helvetica";
+      // color: rgba(0, 0, 0, 0.8);
+      // margin: 0 0 0 .6em;
+    //   position: absolute;
+      height: 80%;
+      padding: 0.8em 2em 0 0;
+      float: right;
+    }
+  }
+  main {
+    font-family: "Comfortaa";
+    // new
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    // new
+    text-shadow: 0.02em 0.05em 0.06em rgba(90, 90, 90, 1);
     padding: 1.6em;
     margin: 1em;
-    height: 100%;
-    // position: relative;
-    border: .2em solid grey;
+    position: relative;
+    border: 0.2em solid grey;
     border-radius: 2em;
-    background-color: rgba(255, 255, 255, 0.70);
-    
+    background-color: rgba(255, 255, 255, 0.7);
+  }
 }
-
-// @media all and (min-width: 380px) {
-//     main {
-//         height: 100%;
-//         // margin: 0 2.8em;
-//     }
-// }

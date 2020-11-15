@@ -114,40 +114,62 @@ time {
   font-size: 1em; }
 
 html {
-  height: 100%;
-  background-color: rgba(90, 90, 90, 0.36); }
+  display: flex;
+  flex-flow: column;
+  height: 100%; }
   html body {
-    height: 100%; }
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    padding-bottom: 2.4em; }
   html h1 {
     font-size: 4em;
     text-shadow: 0.02em 0.05em 0.06em #5a5a5a;
     color: #e1ac26;
     text-align: Left;
-    padding: 0 0 .5em .2em; }
-  html article section {
-    font-family: 'BPMono';
-    padding: 0 0 1.3em 1.3em; }
-  html article header h2 {
+    padding: 0 0 0.5em 0.2em; }
+  html h2 {
     font-size: 3em;
     color: #316b98; }
-  html article H3 {
-    font-size: 2em;
-    color: #28465b;
-    margin: .4em 0; }
-  html article h4 {
-    font-size: 2em;
-    color: #2089da;
-    padding: 1.6em 0em 0.4em; }
-  html article a {
-    font-size: 1.5em;
-    padding: 0 0 .3em .5em; }
-
-main {
-  font-family: 'Comfortaa';
-  text-shadow: 0.02em 0.05em 0.06em #5a5a5a;
-  padding: 1.6em;
-  margin: 1em;
-  height: 100%;
-  border: .2em solid grey;
-  border-radius: 2em;
-  background-color: rgba(255, 255, 255, 0.7); }
+  html article {
+    font-family: "BPMono";
+    padding: 0 0 1.3em 1.3em;
+    display: flex;
+    flex-flow: column;
+    height: 100%; }
+    html article h3 {
+      font-size: 2em;
+      color: #28465b;
+      margin: 0.4em 0; }
+    html article h4 {
+      font-size: 2em;
+      color: #2089da;
+      padding: 1.6em 0em 0.4em; }
+    html article a {
+      font-size: 1.5em;
+      padding: 0 0 0.3em 0.5em; }
+  html footer {
+    position: fixed;
+    height: 2.5em;
+    bottom: -3em;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1030;
+    background-color: #c3c3c3; }
+    html footer h6 {
+      height: 80%;
+      padding: 0.8em 2em 0 0;
+      float: right; }
+  html main {
+    font-family: "Comfortaa";
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    text-shadow: 0.02em 0.05em 0.06em #5a5a5a;
+    padding: 1.6em;
+    margin: 1em;
+    position: relative;
+    border: 0.2em solid grey;
+    border-radius: 2em;
+    background-color: rgba(255, 255, 255, 0.7); }
