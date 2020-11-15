@@ -99,9 +99,7 @@ html {
   font-family: Tahoma, Geneva, Verdana, sans-serif; }
 
 h1 {
-  font-size: 1.6em;
-  line-height: 1.4em;
- }
+  font-size: 1.6em; }
 
 h2 {
   font-size: 1.4em; }
@@ -115,10 +113,6 @@ p {
 time {
   font-size: 1em; }
 
-html {
-  background: radial-gradient(circle at 0% 50%, rgba(96, 16, 48, 0) 9px, #613 10px, rgba(96, 16, 48, 0) 11px) 0px 10px, radial-gradient(at 100% 100%, rgba(96, 16, 48, 0) 9px, #613 10px, rgba(96, 16, 48, 0) 11px), rgba(136, 170, 51, 0.3);
-  background-size: 20px 20px; }
-
 html body {
   height: 100%; }
 
@@ -126,11 +120,7 @@ html h1 {
   font-size: 4em;
   text-shadow: 0.05em 0.1em 0.06em #5a5a5a;
   color: #e1ac26;
-  text-align: center; 
-}
-header{
-padding-bottom: 1em;
-  }
+  text-align: center; }
 
 html article section {
   font-family: 'BPMono';
