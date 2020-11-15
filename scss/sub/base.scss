@@ -4,9 +4,10 @@ html {
     }
     h1 {
         font-size: 4em;
-        text-shadow: 0.05em 0.1em 0.06em #5a5a5a;
+        text-shadow: 0.02em 0.05em 0.06em #5a5a5a;
         color: rgb(225, 172, 38);
-        text-align: center;
+        text-align: Left;
+        padding: 0 0 .5em .2em
     }
     article {
         section {
@@ -35,8 +36,8 @@ html {
 }
 
 main {
-    font-family: 'Pacifico';
-    text-shadow: 0.11em 0.11em 0.11em rgb(90, 90, 90);
+    font-family: 'Comfortaa';
+    text-shadow: 0.02em 0.05em 0.06em rgb(90, 90, 90);
     padding: 1.6em;
     margin: 2.8em;
     height: auto;

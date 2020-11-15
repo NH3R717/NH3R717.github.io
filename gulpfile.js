@@ -5,8 +5,6 @@
 
 // exports.default = defaultTask
 
-
-
 // Import the required dependencies
 // (these are first installed with NPM)
 const gulp = require('gulp')

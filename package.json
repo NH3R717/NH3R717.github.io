@@ -1,8 +1,8 @@
 {
-    "name": "wdd-portfolio",
-    "version": "1.0.0",
+    "name": "Supers Cafe Web Portfolio",
+    "version": "1.1.0",
     "private": false,
-    "description": "Full Sail University WDD Portfolio.",
+    "description": "Supers Cafe Web Projects and About",
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
@@ -19,12 +19,12 @@
         "type": "git",
         "url": "git+https://github.com/NH3R717/NH3R717.github.io.git"
     },
-    "author": "name",
+    "author": "tommy umholtz",
     "license": "ISC",
     "bugs": {
         "url": ""
     },
-    "homepage": "https://nh3r717.github.io/",
+    "homepage": "http://superscafe.com",
     "dependencies": {
         "jshint": "^2.11.0"
     }
