@@ -15,3 +15,4 @@
   hamburger.nav.addEventListener('click', function(e) { hamburger.doToggle(e); });
 
 }());
+// document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))
