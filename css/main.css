@@ -129,13 +129,13 @@ html {
     text-shadow: 0.02em 0.05em 0.06em #5a5a5a;
     color: #e1ac26;
     text-align: Left;
-    padding: 0 0 0.5em 0.2em; }
+    padding: .6em 0 0.8em 0.2em; }
   html h2 {
     font-size: 3em;
     color: #316b98; }
   html article {
     font-family: "BPMono";
-    padding: 0 0 1.3em 1.3em;
+    padding: 2.5em 0 1.3em 1.3em;
     display: flex;
     flex-flow: column;
     height: 100%; }
@@ -169,16 +169,22 @@ html {
     flex-flow: column;
     height: 100%;
     text-shadow: 0.02em 0.05em 0.06em #5a5a5a;
-    padding: 1.6em;
-    margin: 1em;
+    padding: 2.6em;
     position: relative;
-    border: 0.2em solid grey;
-    border-radius: 2em;
-    background-color: white; }
+    background-color: whitesmoke; }
   html #copy {
     height: 80%;
     padding: 0.8em 1em 0 0;
     float: right; }
+
+#sc-logo {
+  max-width: 9em;
+  height: auto; }
+
+.home {
+  margin-top: 6em; }
+  .home h1 {
+    text-align: left; }
 
 .nav {
   -webkit-transition: left 0.5s ease;
