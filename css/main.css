@@ -178,8 +178,8 @@ html {
     float: right; }
 
 #sc-logo {
-  max-width: 8em;
-  height: auto; }
+  width: 8em;
+  height: 8em; }
 
 .home {
   margin-top: 0em; }
