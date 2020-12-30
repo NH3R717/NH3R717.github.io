@@ -13,7 +13,8 @@
         "browser-sync": "^2.26.7",
         "gulp": "^4.0.2",
         "gulp-sass": "^4.0.2",
-        "node-sass": "^4.13.1"
+        "node-sass": "^4.13.1",
+        "jshint": "^2.11.0"
     },
     "repository": {
         "type": "git",
@@ -25,7 +26,5 @@
         "url": ""
     },
     "homepage": "http://superscafe.com",
-    "dependencies": {
-        "jshint": "^2.11.0"
-    }
+    "dependencies": {}
 }
