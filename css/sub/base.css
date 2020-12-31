@@ -1,76 +1,92 @@
 html {
   display: flex;
   flex-flow: column;
-  height: 100%; }
-  html body {
-    display: flex;
-    flex-flow: column;
-    height: 100%;
-    padding-bottom: 2.4em; }
-  html .header-nav {
-    display: flex; }
-  html h1 {
-    font-size: 4em;
-    text-shadow: 0.02em 0.05em 0.06em #5a5a5a;
-    color: #e1ac26;
-    text-align: left;
-    padding: .6em 0 0.8em 0.2em; }
-  html h2 {
-    font-size: 3em;
-    color: #316b98; }
-  html article {
-    font-family: "BPMono";
-    padding: 2.5em 0 1.3em 1.3em;
-    display: flex;
-    flex-flow: column;
-    height: 100%; }
-    html article h3 {
-      font-size: 2em;
-      color: #28465b;
-      margin: 0.4em 0; }
-    html article h4 {
-      font-size: 2em;
-      color: #2089da;
-      padding: 1.6em 0em 0.4em; }
-    html article a {
-      font-size: 1.5em;
-      padding: 0 0 0.3em 0.5em; }
-  html footer {
-    position: fixed;
-    height: 2.5em;
-    bottom: -3em;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    z-index: 1030;
-    background-color: #c3c3c3; }
-    html footer h6 {
-      height: 80%;
-      padding: 0.8em 2em 0 0;
-      float: right; }
-  html main {
-    font-family: "Comfortaa";
-    display: flex;
-    flex-flow: column;
-    height: 100%;
-    text-shadow: 0.02em 0.05em 0.06em #5a5a5a;
-    padding: 2.6em;
-    position: relative;
-    background-color: #f0f0f0; }
-  html #copy {
-    height: 80%;
-    padding: 0.8em 1em 0 0;
-    float: right; }
+  height: 100%;
+}
+html body {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  padding-bottom: 2.4em;
+}
+html .header-nav {
+  display: flex;
+}
+html h1 {
+  font-size: 4em;
+  text-shadow: 0.02em 0.05em 0.06em #5a5a5a;
+  color: #e1ac26;
+  text-align: left;
+  padding: 0.6em 0 0.8em 0.2em;
+}
+html h2 {
+  font-size: 3em;
+  color: #316b98;
+}
+html article {
+  font-family: "BPMono";
+  padding: 2.5em 0 1.3em 1.3em;
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+html article h3 {
+  font-size: 2em;
+  color: #28465b;
+  margin: 0.4em 0;
+}
+html article h4 {
+  font-size: 2em;
+  color: #2089da;
+  padding: 1.6em 0em 0.4em;
+}
+html article a {
+  font-size: 1.5em;
+  padding: 0 0 0.3em 0.5em;
+}
+html footer {
+  position: fixed;
+  height: 2.5em;
+  bottom: -3em;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1030;
+  background-color: #c3c3c3;
+}
+html footer h6 {
+  height: 80%;
+  padding: 0.8em 2em 0 0;
+  float: right;
+}
+html main {
+  font-family: "Comfortaa";
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  text-shadow: 0.02em 0.05em 0.06em #5a5a5a;
+  padding: 2.6em;
+  position: relative;
+  background-color: #f0f0f0;
+}
+html #copy {
+  height: 80%;
+  padding: 0.8em 1em 0 0;
+  float: right;
+}
 
 #sc-logo {
   width: 8em;
-  height: 8em; }
+  height: 8em;
+}
 
 .home {
-  margin-top: 0em; }
-  .home h1 {
-    font-size: 3.4em;
-    text-align: center; }
+  margin-top: 0em;
+}
+.home h1 {
+  font-size: 3.4em;
+  text-align: center;
+}
 
 .nav {
   -webkit-transition: left 0.5s ease;
@@ -89,10 +105,12 @@ html {
   float: right;
   top: 0;
   width: 13rem;
-  z-index: 1; }
+  z-index: 1;
+}
 
 .nav.expanded {
-  right: 0; }
+  right: 0;
+}
 
 .nav ul {
   position: absolute;
@@ -103,7 +121,8 @@ html {
   list-style: none;
   line-height: 2em;
   margin: 0;
-  padding: 0 0 4em 1em; }
+  padding: 0 0 4em 1em;
+}
 
 .nav-toggle {
   -webkit-user-select: none;
@@ -115,10 +134,12 @@ html {
   position: fixed;
   top: 2rem;
   width: 3.6rem;
-  z-index: 2; }
+  z-index: 2;
+}
 
 .nav-toggle:hover {
-  opacity: 0.8; }
+  opacity: 0.8;
+}
 
 .nav-toggle .nav-toggle-bar,
 .nav-toggle .nav-toggle-bar::after,
@@ -137,37 +158,45 @@ html {
   content: "";
   height: 0.4rem;
   width: 100%;
-  float: right; }
+  float: right;
+}
 
 .nav-toggle .nav-toggle-bar {
   margin-top: 0;
-  float: right; }
+  float: right;
+}
 
 .nav-toggle .nav-toggle-bar::after {
   margin-top: 0.8rem;
-  float: right; }
+  float: right;
+}
 
 .nav-toggle .nav-toggle-bar::before {
   margin-top: -0.8rem;
-  float: right; }
+  float: right;
+}
 
 .nav-toggle.expanded .nav-toggle-bar {
-  background: transparent; }
+  background: transparent;
+}
 
 .nav-toggle.expanded .nav-toggle-bar::after,
 .nav-toggle.expanded .nav-toggle-bar::before {
   background: white;
   margin-top: 0;
-  float: right; }
+  float: right;
+}
 
 .nav-toggle.expanded .nav-toggle-bar::after {
   -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
-  float: right; }
+  float: right;
+}
 
 .nav-toggle.expanded .nav-toggle-bar::before {
   -ms-transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
-  float: right; }
+  float: right;
+}
