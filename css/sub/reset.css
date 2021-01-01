@@ -80,30 +80,23 @@ video {
   font: inherit;
   vertical-align: baseline;
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 html {
   font-size: 62.5%;
-  font-family: Tahoma, Geneva, Verdana, sans-serif;
-}
+  font-family: Tahoma, Geneva, Verdana, sans-serif; }
 
 h1 {
-  font-size: 1.6em;
-}
+  font-size: 1.6em; }
 
 h2 {
-  font-size: 1.4em;
-}
+  font-size: 1.4em; }
 
 h3 {
-  font-size: 1.2em;
-}
+  font-size: 1.2em; }
 
 p {
-  font-size: 1em;
-}
+  font-size: 1em; }
 
 time {
-  font-size: 1em;
-}
+  font-size: 1em; }
